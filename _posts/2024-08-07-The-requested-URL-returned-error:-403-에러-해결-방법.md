@@ -19,9 +19,6 @@ categories: [git, ]
 user-id, user-name, repository-name을 바꿔줘야 한다.
 
 
-git remote set-url origin https://<user-id>@github.com/<user-name>/<repository-name>.git
-
-
 2. 터미널에서 push를 실행한다.
 
 
