@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-07
-title: "[URL Shortener]Capacity Estimation"
+title: "[URL Shortener] Capacity Estimation"
 tags: [systemdesign, urlshortener, architecture, ]
 categories: [systemDesign, problems, urlShortener, ]
 ---
