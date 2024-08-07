@@ -2,7 +2,7 @@
 layout: post
 date: 2024-08-07
 title: "[URL Shortener]Summary"
-tags: [systemdesign, architecture, ]
+tags: [systemdesign, urlshortener, architecture, ]
 categories: [systemDesign, problems, urlShortener, ]
 ---
 
