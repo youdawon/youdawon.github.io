@@ -35,7 +35,8 @@ undefined
 | Column          | Data Type      | Attribute | Nullable |
 | --------------- | -------------- | --------- | -------- |
 | `photo_id`      | `int`          | PK        | No       |
-| `user_id`       | `int`          |           | No       |
+| `photo_name`    | `varchar(100)` | INDEX     | No       |
+| `user_id`       | `int`          | FK        | No       |
 | `photo_path`    | `varchar(100)` |           | No       |
 | `creation_date` | `datetime`     |           | No       |
 
