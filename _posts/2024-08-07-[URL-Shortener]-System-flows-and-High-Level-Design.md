@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-07
-title: "[URL Shortener]Summary"
+title: "[URL Shortener] System flows and High Level Design"
 tags: [systemdesign, urlshortener, architecture, ]
 categories: [systemDesign, problems, urlShortener, ]
 ---
@@ -120,3 +120,6 @@ categories: [systemDesign, problems, urlShortener, ]
 
 1. **Regular Backups**:
 	- Regularly backs up database and cache data and establishes recovery procedures.
+
+##High Level Design
+
