@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-07
-title: "["
+title: "[Pastebin] API Design"
 tags: [systemdesign, architecture, pastebin, ]
 categories: [systemDesign, problems, pastebin, ]
 ---
@@ -16,7 +16,7 @@ categories: [systemDesign, problems, pastebin, ]
 	- Optional: `Authorization: Bearer jwt_token`
 - **Request Body:**
 
-	
+
 {% raw %}
 ```json
 	{
@@ -31,7 +31,7 @@ categories: [systemDesign, problems, pastebin, ]
 
 - **Response Body:**
 
-	
+
 {% raw %}
 ```json
 	{
@@ -51,7 +51,7 @@ categories: [systemDesign, problems, pastebin, ]
 - **Description:** Retrieve a paste by URL key.
 - **Response Body:**
 
-	
+
 {% raw %}
 ```json
 	{
@@ -74,7 +74,7 @@ categories: [systemDesign, problems, pastebin, ]
 	- `Authorization: Bearer jwt_token`
 - **Response Body:**
 
-	
+
 {% raw %}
 ```json
 	{
