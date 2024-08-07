@@ -18,6 +18,7 @@ categories: [systemDesign, problems, urlShortener, ]
 | `expiration_date` | `datetime`     |           | No       |
 | `creation_date`   | `datetime`     |           | No       |
 
+undefined
 ### 2. User Table
 
 
@@ -27,3 +28,4 @@ categories: [systemDesign, problems, urlShortener, ]
 | `last_login_date` | `datetime` |           | Yes      |
 | `creation_date`   | `datetime` |           | No       |
 
+undefined

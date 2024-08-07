@@ -7,7 +7,7 @@ categories: [systemDesign, problems, urlShortener, ]
 ---
 
 
-### 
+---
 
 1. **Load Balancer**:
 	- Routes the client's request to one of the server nodes.
@@ -41,25 +41,6 @@ categories: [systemDesign, problems, urlShortener, ]
 9. **DDOS Protection and Request Limiting**:
 	- Each client uses a unique `api_dev_key`.
 	- The load balancer limits request rates based on the `api_dev_key` to prevent DDOS attacks.
-
-#### Improvement Suggestions
-
-1. **URL Validation Enhancement**:
-	- **Accessibility Check**: Optionally implements asynchronous accessibility checks to see if the URL is reachable.
-2. **TTL Setting and Cache Management**:
-	- **TTL Setting**: Configures TTL on cache data to automatically expire after a set time.
-	- **Cache Management Policy**: Uses LRU (Least Recently Used) policy to manage cache when it is full.
-3. **Clearer Error Messages**:
-	- Provides more specific error messages to facilitate debugging for clients.
-4. **Zookeeper Sequence Range Allocation**:
-	- Periodically checks and dynamically adjusts the sequence range assigned by Zookeeper when new nodes are added.
-5. **Security Enhancements**:
-	- Strengthens validation procedures to prevent XSS, SQL injection, and other attacks.
-6. **Logging and Monitoring System Enhancements**:
-	- Builds a real-time monitoring dashboard to track system status.
-	- Logs all major events for traceability.
-7. **Backup and Recovery Plan**:
-	- Regularly backs up database and cache data and establishes recovery procedures.
 
 #### Final Design Flow
 
@@ -121,5 +102,8 @@ categories: [systemDesign, problems, urlShortener, ]
 1. **Regular Backups**:
 	- Regularly backs up database and cache data and establishes recovery procedures.
 
-##High Level Design
+#### High Level Design
+
+
+![0](/assets/img/2024-08-07-[URL-Shortener]-System-flows-and-High-Level-Design.md/0.png)
 
