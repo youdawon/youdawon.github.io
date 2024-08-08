@@ -154,7 +154,6 @@ title: "${title}"${fmtags}${fmcats}
 
     fs.writeFile(path.join(root, ftitle), fm + edited_md, (err) => {
       if (err) {
-	console.log(${filename});
         console.log(err);
       }
     });
