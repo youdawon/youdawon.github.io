@@ -21,7 +21,8 @@ categories: [systemDesign, problems, Instagram, ]
 - Interacts with:
 	- **Master Database** for writing metadata and reading confirmation.
 	- **Cache (LRU with TTL)** to store frequently accessed metadata temporarily.
-	- **Amazon S3** to save images.
+	- **Amazon S3** to generate pre-signed URLs for direct uploads by clients.
+	- **Kafka Producer** to publish messages to Kafka topics.
 
 ### 4. Download Image Request Server
 
@@ -29,8 +30,7 @@ categories: [systemDesign, problems, Instagram, ]
 - Interacts with:
 	- **Slave Database** for reading metadata.
 	- **Cache (LRU with TTL)** to retrieve frequently accessed metadata.
-	- **Amazon CloudFront** to serve images efficiently.
-	- **Amazon S3** to fetch image URLs.
+	- Provides pre-signed URLs or direct URLs to **Amazon CloudFront** for image delivery.
 
 ### 5. Master Database
 
@@ -57,6 +57,7 @@ categories: [systemDesign, problems, Instagram, ]
 ### 9. Amazon S3
 
 - Stores image files securely and scalably.
+- Provides pre-signed URLs for direct uploads and access.
 
 ### 10. Amazon CloudFront
 
@@ -72,39 +73,17 @@ categories: [systemDesign, problems, Instagram, ]
 
 ### 12. Scalability
 
-- **Auto-Scaling**: Implement auto-scaling for the upload and download servers to handle varying loads dynamically.
-- **Horizontal Scaling**: Ensure that both master and slave databases can scale horizontally to handle increasing data volumes and user loads.
-- **Microservices Architecture**: Consider breaking down the application into microservices to independently scale different components.
-- **Containerization**: Use containerization (e.g., Docker) and orchestration tools (e.g., Kubernetes) to manage and scale services efficiently.
-- **Distributed Systems**: Use distributed systems and databases to handle massive amounts of data and requests.
+- **Cloud-Based Server Scaling**: Utilize cloud services such as AWS, Azure, or Google Cloud Platform to dynamically scale the upload and download servers based on demand.
+	- **Auto-Scaling**: Implement auto-scaling policies to automatically adjust the number of server instances in response to traffic load.
+	- **Load Balancer**: Ensure the load balancer can handle scaling by distributing traffic evenly across the dynamically changing pool of server instances.
+	- **Managed Databases**: Use managed database services that can automatically scale, such as Amazon RDS, Azure SQL Database, or Google Cloud SQL.
 
-### 13. Security Enhancements
+### 13. Newsfeed Generation Service
 
-- **HTTPS Everywhere**: Ensure all communications between components are encrypted using HTTPS to protect data in transit.
-- **Authentication and Authorization**: Implement OAuth2.0 or JWT for secure access control. Ensure robust validation and error handling for all API endpoints.
-- **Data Validation**: Ensure comprehensive data validation both on the client-side and server-side to maintain data integrity.
-
-### 14. Monitoring and Analytics
-
-- **Comprehensive Monitoring**: Implement monitoring tools like Prometheus, Grafana, or ELK Stack (Elasticsearch, Logstash, Kibana) to track system performance and detect issues early.
-- **Real-Time Analytics**: Use real-time analytics to understand user behavior, monitor application health, and make data-driven decisions.
-- **Alerting**: Set up alerting mechanisms for critical metrics such as high latency, replication lag, and server errors to ensure timely response to issues.
-
-### 15. User Experience and Responsiveness
-
-- **Lazy Loading**: Implement lazy loading for images and other heavy resources to improve initial page load times and user experience.
-- **Responsive Design**: Ensure the application is responsive and works well on different devices and screen sizes.
-- **Progressive Web App (PWA)**: Consider developing a PWA to enhance the mobile user experience with features like offline access and push notifications.
-
-### 16. Cost Optimization
-
-- **Resource Utilization**: Regularly review and optimize resource utilization to avoid over-provisioning and reduce costs.
-- **Serverless Architectures**: Explore serverless computing options for certain parts of your application to lower costs and improve scalability.
-
-### 17. Community and User Engagement
-
-- **Feedback Mechanisms**: Implement features that allow users to provide feedback easily to continuously improve the application.
-- **Social Integration**: Add social media integration to allow users to share content easily, increasing engagement and reach.
+- **Kafka Producer**: Modify the Upload Image Request Server to act as a Kafka producer that publishes messages to a Kafka topic `image_uploads` after uploading an image and saving metadata.
+- **Kafka Consumer**: Implement the Newsfeed Generation Service as a Kafka consumer that subscribes to the `image_uploads` topic.
+- **Message Processing**: On receiving a message, the Newsfeed Generation Service updates the newsfeed table in the metadata database and updates the cache.
+- **Kafka Cluster**: Set up a Kafka cluster with sufficient brokers to handle your expected load and ensure high availability.
 
 [link_preview](https://whimsical.com/instagram-high-level-design-GrSuRQdbwqtwwBhtLa7337)
 
