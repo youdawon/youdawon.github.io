@@ -35,9 +35,9 @@ undefined
 | Column          | Data Type      | Attribute | Nullable |
 | --------------- | -------------- | --------- | -------- |
 | `content_id`    | `int`          | PK        | No       |
-| `content_name`  | `varchar(100)` | INDEX     | No       |
+| `content_name`  | `varchar(100)` |           | No       |
 | `user_id`       | `int`          | FK        | No       |
-| `photo_path`    | `varchar(100)` |           | No       |
+| `content_url`   | `varchar(100)` |           | No       |
 | `creation_date` | `datetime`     |           | No       |
 
 undefined
@@ -47,6 +47,7 @@ undefined
 | Column          | Data Type  | Attribute | Nullable |
 | --------------- | ---------- | --------- | -------- |
 | `newsfeed_id`   | `int`      | PK        | No       |
+| `user_id`       | `int`      | FK        | No       |
 | `content_id`    | `int`      | FK        | No       |
 | `creation_date` | `datetime` |           | No       |
 
