@@ -7,7 +7,10 @@ categories: [Microservices, ]
 ---
 
 
-## 1. Saga Pattern
+예전 Microservices 구조의 프로젝트를 할 때 공부했던 부분을 다시 정리해봤다. 공부할 땐 사실 무슨말인지 잘 몰랐는데 실제로 서비스에 적용해보고 공부하면서 서비스 구조를 생각해보니 더 잘 이해가 된다. Saga Pattern이랑 Event-Driven Architecture의 차이가 헷갈렸는데 내가 개발한 부분은 Event-Driven Architecture에 가까운 것으로 보인다. 
+
+
+### 1. Saga Pattern
 
 
 The Saga is a design pattern for managing distributed transactions. Instead of a single monolithic transaction, a Saga splits the transaction into a series of smaller, isolated steps, each with its own compensating transaction to undo the operation if necessary.
