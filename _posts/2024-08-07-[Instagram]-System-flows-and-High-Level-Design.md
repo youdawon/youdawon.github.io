@@ -7,131 +7,104 @@ categories: [systemDesign, problems, Instagram, ]
 ---
 
 
-## 1. Traffic Management
+## 1. Users
 
+- Multiple users accessing the system.
 
-#### 1.1 Load Balancer
+### 2. Load Balancer
 
-1. **Function:** Routes traffic to appropriate servers.
-2. **Read Requests:** Directed to read servers.
-3. **Write Requests:** Directed to write servers.
+- Distributes incoming requests to various servers to handle large numbers of users simultaneously.
 
-### 2. Read and Write Operations
+### 3. Upload Image Request Server
 
+- Handles image upload requests from users.
+- Interacts with:
+	- **Master Database** for writing metadata and reading confirmation.
+	- **Cache (LRU with TTL)** to store frequently accessed metadata temporarily.
+	- **Amazon S3** to save images.
 
-#### 2.1 Read Servers
+### 4. Download Image Request Server
 
-1. **Cache Check:**
-	- Attempt to read metadata from cache.
-	- If metadata is present, return the response.
-	- If metadata is not present, fetch from metadata storage, update cache, and return the response.
+- Handles image download requests from users.
+- Interacts with:
+	- **Slave Database** for reading metadata.
+	- **Cache (LRU with TTL)** to retrieve frequently accessed metadata.
+	- **Amazon CloudFront** to serve images efficiently.
+	- **Amazon S3** to fetch image URLs.
 
-#### 2.2 Write Servers
+### 5. Master Database
 
-1. Handle all write operations to the master database.
+- Handles all write operations and reads for confirmation.
+- Replicates data to one or more slave databases to ensure data consistency and availability.
 
-### 3. Database Architecture
+### 6. Slave Database(s)
 
+- Handles read operations to offload read traffic from the master database.
+- Ensures high availability and load distribution for read requests.
 
-#### 3.1 Master Database
+### 7. Data Consistency Mechanism
 
-1. Handles both read and write operations for metadata.
-2. Replicates data to slave databases.
+- **Replication Lag Monitoring**: Continuously monitor replication lag between master and slave databases to ensure timely data consistency.
+- **Fallback Mechanism**: In case of significant lag, redirect read requests temporarily to the master database.
+- **Eventual Consistency Handling**: Implement strategies to handle eventual consistency scenarios, where data may take some time to propagate to slave databases.
 
-#### 3.2 Slave Databases
+### 8. Cache (LRU with TTL)
 
-1. Handle read-only operations to offload the master database.
+- Stores frequently accessed metadata to improve performance.
+- Implements a TTL mechanism to automatically expire and remove outdated entries.
+- **Cache Invalidation**: Implement cache invalidation strategies to ensure consistency between cache and database.
 
-### 4. Content Storage and Delivery
+### 9. Amazon S3
 
+- Stores image files securely and scalably.
 
-#### 4.1 Amazon S3
+### 10. Amazon CloudFront
 
-1. **Function:** Stores all photo and video content.
-2. **Content URLs:** Provided to clients.
-3. **Content Delivery:** Redirect clients to the CDN for fast content delivery.
+- Acts as a Content Delivery Network (CDN) to deliver images quickly to users across the globe.
 
-### 5. News Feed Generation
+### 11. Content Delivery Optimization
 
+- **Edge Locations**: Use CloudFront edge locations to reduce latency by serving content from locations closer to the user.
+- **Caching Policies**: Configure appropriate caching policies for static content like images to reduce load on the origin servers.
+- **Compression**: Use Gzip or Brotli compression to reduce the size of transferred content, improving load times.
+- **Optimized Media Formats**: Use efficient image formats (e.g., WebP) to reduce file sizes without compromising quality.
+- **Content Versioning**: Implement versioning for static content to manage cache invalidation and ensure users get the latest content.
 
-#### 5.1 Scheduled Service
+### 12. Scalability
 
-1. Periodically updates users' news feeds.
-2. Updates are stored in both the database and cache.
+- **Auto-Scaling**: Implement auto-scaling for the upload and download servers to handle varying loads dynamically.
+- **Horizontal Scaling**: Ensure that both master and slave databases can scale horizontally to handle increasing data volumes and user loads.
+- **Microservices Architecture**: Consider breaking down the application into microservices to independently scale different components.
+- **Containerization**: Use containerization (e.g., Docker) and orchestration tools (e.g., Kubernetes) to manage and scale services efficiently.
+- **Distributed Systems**: Use distributed systems and databases to handle massive amounts of data and requests.
 
-### 6. Search Functionality
+### 13. Security Enhancements
 
+- **HTTPS Everywhere**: Ensure all communications between components are encrypted using HTTPS to protect data in transit.
+- **Authentication and Authorization**: Implement OAuth2.0 or JWT for secure access control. Ensure robust validation and error handling for all API endpoints.
+- **Data Validation**: Ensure comprehensive data validation both on the client-side and server-side to maintain data integrity.
 
-#### 6.1 Logstash
+### 14. Monitoring and Analytics
 
-1. Frequently updates Elasticsearch with photo metadata from the database.
+- **Comprehensive Monitoring**: Implement monitoring tools like Prometheus, Grafana, or ELK Stack (Elasticsearch, Logstash, Kibana) to track system performance and detect issues early.
+- **Real-Time Analytics**: Use real-time analytics to understand user behavior, monitor application health, and make data-driven decisions.
+- **Alerting**: Set up alerting mechanisms for critical metrics such as high latency, replication lag, and server errors to ensure timely response to issues.
 
-#### 6.2 Elasticsearch
+### 15. User Experience and Responsiveness
 
-1. Handles search queries for photo and video titles.
+- **Lazy Loading**: Implement lazy loading for images and other heavy resources to improve initial page load times and user experience.
+- **Responsive Design**: Ensure the application is responsive and works well on different devices and screen sizes.
+- **Progressive Web App (PWA)**: Consider developing a PWA to enhance the mobile user experience with features like offline access and push notifications.
 
-### 7. Follow/Unfollow Logic
+### 16. Cost Optimization
 
+- **Resource Utilization**: Regularly review and optimize resource utilization to avoid over-provisioning and reduce costs.
+- **Serverless Architectures**: Explore serverless computing options for certain parts of your application to lower costs and improve scalability.
 
-#### 7.1 Database Schema
+### 17. Community and User Engagement
 
-1. **UserFollower Table:** Manages follow relationships.
-
-#### 7.2 API Endpoints
-
-1. Endpoints for follow and unfollow actions.
-
-### 8. User Notifications
-
-
-#### 8.1 Notification Service
-
-1. Handles and sends real-time notifications.
-
-#### 8.2 Real-time Updates
-
-1. Implement WebSockets or push notification services.
-
-### 9. Rate Limiting
-
-
-#### 9.1 API Gateway
-
-1. Implements rate limiting policies.
-2. Controls the number of requests per user/IP.
-
-### 10. Backup and Disaster Recovery
-
-
-#### 10.1 Regular Backups
-
-1. Schedule regular backups for databases and critical data.
-
-#### 10.2 Disaster Recovery Procedures
-
-1. Implement and regularly test recovery procedures.
-
-### 11. Security Enhancements
-
-
-#### 11.1 Authentication and Authorization
-
-1. Use OAuth 2.0 for secure authentication.
-
-#### 11.2 Data Encryption
-
-1. Encrypt data both at rest and in transit.
-
-### 12. Monitoring and Alerts
-
-
-#### 12.1 Performance Monitoring
-
-1. Use tools like AWS CloudWatch or Datadog to monitor system performance.
-
-#### 12.2 Alert Configuration
-
-1. Set up alerts for critical issues such as high latency, cache misses, and replication lag.
+- **Feedback Mechanisms**: Implement features that allow users to provide feedback easily to continuously improve the application.
+- **Social Integration**: Add social media integration to allow users to share content easily, increasing engagement and reach.
 
 [link_preview](https://whimsical.com/instagram-high-level-design-GrSuRQdbwqtwwBhtLa7337)
 
