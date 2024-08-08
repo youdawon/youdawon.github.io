@@ -13,7 +13,7 @@ categories: [Database, ]
 Zookeeper를 이용해 노드 별로 생성할 수 있는 키 범위를 정하는 방법도 있고 Key Generation Service를 따로 구성해서 Base62(a-z, A-Z, 0-9)기준으로 키를 생성하여 DB에 저장한 후 사용하는 방법도 있었는데 아래와 같은 방법도 처음 보는 방법이라 정리해보았다. 
 
 
-나는 Primary Key를 auto-increment로 생성해서 사용하는 방법만 해봤는데 아무래도 서비스 규모가 다르다보니 글로벌 서비스에서는 Primary Key 생성하는데도 상당한 고민이 필요해보인다. 
+auto-increment 사용 시 PostgreSQL기준으로 1ms에 약 1000개의 키 생성이 가능한데 트래픽이 많은 인스타그램에서는 이러한 제한으로 병목현상이 생긴다고 한다. 나는 Primary Key를 auto-increment로 생성해서 사용하는 방법만 해봤는데 아무래도 서비스 규모가 다르다보니 글로벌 서비스에서는 Primary Key 생성하는데도 상당한 고민이 필요해보인다. 
 
 
 #### 1. Key Features of Instagram's ID Generation:
@@ -77,7 +77,6 @@ When creating a table for storing content, the custom ID generation function can
 
 {% raw %}
 ```sql
-sql코드 복사
 CREATE TABLE Content (
     content_id bigint NOT NULL DEFAULT next_id(),
     user_id int NOT NULL,
