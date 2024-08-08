@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-07
 title: "[URL Shortener] System flows and High Level Design"
-tags: [systemdesign, urlshortener, architecture, ]
-categories: [systemDesign, problems, urlShortener, ]
+tags: [SystemDesign, UrlShortener, Architecture, ]
+categories: [SystemDesign, Problems, UrlShortener, ]
 ---
 
 

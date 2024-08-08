@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-07
 title: "[Pastebin] Capacity Estimation"
-tags: [systemdesign, architecture, pastebin, ]
-categories: [systemDesign, problems, pastebin, ]
+tags: [SystemDesign, Architecture, Pastebin, ]
+categories: [SystemDesign, Problems, Pastebin, ]
 ---
 
 

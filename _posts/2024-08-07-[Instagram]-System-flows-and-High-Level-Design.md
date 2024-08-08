@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-07
 title: "[Instagram] System flows and High Level Design"
-tags: [systemdesign, architecture, Instagram, ]
-categories: [systemDesign, problems, Instagram, ]
+tags: [SystemDesign, Architecture, Instagram, ]
+categories: [SystemDesign, Problems, Instagram, ]
 ---
 
 
