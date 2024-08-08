@@ -2,7 +2,7 @@
 layout: post
 date: 2024-08-08
 title: "[Database] 인스타그램에서 Primary key를 생성하는 방법"
-tags: [Dabatabse, Instagram, ]
+tags: [Dabatabse, Instagram, Architecture, ]
 categories: [Database, ]
 ---
 

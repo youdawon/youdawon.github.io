@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-07
-title: "시스템 디자인 기초1"
+title: "[SystemDesign] 시스템 디자인 기초1"
 tags: [SystemDesign, Architecture, ]
 categories: [SystemDesign, Basics, ]
 ---

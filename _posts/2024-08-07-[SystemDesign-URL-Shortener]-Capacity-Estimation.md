@@ -1,23 +1,23 @@
 ---
 layout: post
 date: 2024-08-07
-title: "시스템 용량 측정 방법"
-tags: [SystemDesign, Architecture, ]
-categories: [SystemDesign, Basics, ]
+title: "[SystemDesign-URL Shortener] Capacity Estimation"
+tags: [SystemDesign, UrlShortener, Architecture, ]
+categories: [SystemDesign, Problems, UrlShortener, ]
 ---
 
 
-# Step 1: Traffic Estimation
+## Step 1: Traffic Estimation
 
-1. **QPS (Queries Per Second) Estimation**:
-	- Calculate the expected number of requests per day.
+1. **QPS (Queries Per Second) Estimation**
 
 	
 {% raw %}
 ```markdown
-	Daily Requests = 100,000,000
-	QPS = Daily Requests / (24 * 60 * 60)
-	QPS = 100,000,000 / 86,400 ≈ 1157 QPS
+	Monthly Requests for new URL shortenings = 500,000,000 per month
+	Read/Write ratio : 100:1
+	Write QPS: 500,000,000 / (30 * 24 * 60 * 60) = 200 QPS
+	Read QPS: 200 QPS * 100 = 20,000 QPS
 ```
 {% endraw %}
 
@@ -29,7 +29,7 @@ categories: [SystemDesign, Basics, ]
 {% raw %}
 ```markdown
 	Peak QPS = Average QPS * Peak Factor
-	Peak QPS = 1157 * 2 ≈ 2314 QPS
+	Peak QPS = 20,000 * 2 = 40,000 QPS
 ```
 {% endraw %}
 
@@ -43,10 +43,7 @@ categories: [SystemDesign, Basics, ]
 	
 {% raw %}
 ```markdown
-	Average Original URL Length = 100 bytes
-	Short URL Length = 10 bytes
-	Metadata Size = 50 bytes
-	Total Size per URL = 100 + 10 + 50 = 160 bytes
+	Total Size per URL = 500 bytes
 ```
 {% endraw %}
 
@@ -57,9 +54,7 @@ categories: [SystemDesign, Basics, ]
 	
 {% raw %}
 ```markdown
-	Daily URL Count = 1,000,000 URLs/day
-	Daily Storage Requirement = Daily URL Count * Total Size per URL
-	Daily Storage Requirement = 1,000,000 * 160 bytes = 160 MB/day
+	Daily Storage Requirement = 24 * 60 * 60 * 200 * 500 bytes = 8.64 GB/day
 ```
 {% endraw %}
 
@@ -70,7 +65,17 @@ categories: [SystemDesign, Basics, ]
 {% raw %}
 ```markdown
 	Annual Storage Requirement = Daily Storage Requirement * 365
-	Annual Storage Requirement = 160 MB/day * 365 ≈ 58.4 GB/year
+	Annual Storage Requirement = 8.64 GB/day * 365 ≈ 3.1 TB/year
+```
+{% endraw %}
+
+
+4. **5-Year Storage Requirement**:
+
+	
+{% raw %}
+```markdown
+	3.1 TB/year * 5 = 15.5 TB
 ```
 {% endraw %}
 
@@ -86,7 +91,7 @@ categories: [SystemDesign, Basics, ]
 ```markdown
 	Cache Hit Rate = 20%
 	Cache Size = Daily URL Count * Cache Hit Rate * Total Size per URL
-	Cache Size = 1,000,000 * 0.2 * 160 bytes = 32 MB
+	Cache Size = 1,000,000 * 0.2 * 500 bytes = 100 MB
 ```
 {% endraw %}
 
@@ -99,9 +104,9 @@ categories: [SystemDesign, Basics, ]
 
 	
 {% raw %}
-```shell
+```markdown
 	Storage Requirement for 5 years = Annual Storage Requirement * 5
-	Storage Requirement for 5 years = 58.4 GB/year * 5 ≈ 292 GB
+	Storage Requirement for 5 years = 3.1 TB/year * 5 ≈ 15.5 TB
 ```
 {% endraw %}
 
@@ -131,7 +136,7 @@ Calculate the bandwidth based on request and response sizes and frequencies.
 
 	
 {% raw %}
-```markdown
+```scss
 	Total Traffic = (Request Traffic + Response Traffic) * 8 (bits/byte) / 1,000,000 (Mbps conversion)
 	Bandwidth = 3,072,000 bytes/sec * 8 / 1,000,000 = 24.576 Mbps
 ```

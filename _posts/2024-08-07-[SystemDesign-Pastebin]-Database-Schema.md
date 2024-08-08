@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-07
-title: "[Pastebin] Database Schema"
+title: "[SystemDesign-Pastebin] Database Schema"
 tags: [SystemDesign, Architecture, Pastebin, ]
 categories: [SystemDesign, Problems, Pastebin, ]
 ---

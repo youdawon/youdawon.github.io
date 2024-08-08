@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-07
-title: "[URL Shortener] Database Schema"
+title: "[SystemDesign-URL Shortener] Database Schema"
 tags: [SystemDesign, UrlShortener, Architecture, ]
 categories: [SystemDesign, Problems, UrlShortener, ]
 ---

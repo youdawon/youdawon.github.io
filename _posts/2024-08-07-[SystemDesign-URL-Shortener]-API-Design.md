@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-07
-title: "[URL Shortener] API Design"
+title: "[SystemDesign-URL Shortener] API Design"
 tags: [SystemDesign, UrlShortener, Architecture, ]
 categories: [SystemDesign, Problems, UrlShortener, ]
 ---
