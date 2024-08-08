@@ -13,20 +13,10 @@ categories: [SystemDesign, Problems, Instagram, ]
 - **Method:** `POST`
 - **Description:** Create a new post and upload a photo to Amazon S3.
 - **Request Header:**
-	- `Authorization: Bearer jwt_token`
+	- Content-Type: multipart/form-data
 - **Request Body (multipart/form-data):**
 	- `content_name:` The name of the content (string).
 	- `photo:` The photo file to upload (file).
-- **Request Header:**
-
-
-{% raw %}
-```text
-Content-Type: multipart/form-data
-```
-{% endraw %}
-
-
 - **Response Body:**
 
 
@@ -47,8 +37,6 @@ Content-Type: multipart/form-data
 - **Endpoint:** `GET /api/v1/instagram`
 - **Method:** `GET`
 - **Description:** Retrieve content, `content_title` is optional.
-- **Request Header:**
-	- `Authorization: Bearer jwt_token`
 - **Request Parameters:**
 	- Optional: `content_title=title`
 	- Pagination: `page=<page_number>&size=<page_size>`
@@ -87,8 +75,6 @@ Content-Type: multipart/form-data
 - **Endpoint:** `DELETE /api/v1/instagram/{content_id}`
 - **Method:** `DELETE`
 - **Description:** Delete a post by `content_id`.
-- **Request Header:**
-	- `Authorization: Bearer jwt_token`
 - **Response Body:**
 
 	
@@ -107,8 +93,6 @@ Content-Type: multipart/form-data
 - **Endpoint:** `POST /api/v1/instagram/follow`
 - **Method:** `POST`
 - **Description:** Follow/Unfollow a user.
-- **Request Header:**
-	- `Authorization: Bearer jwt_token`
 - **Request Body:**
 
 	
@@ -140,8 +124,6 @@ Content-Type: multipart/form-data
 - **Endpoint:** `GET /api/v1/instagram/newsfeed`
 - **Method:** `GET`
 - **Description:** Get news feed.
-- **Request Header:**
-	- `Authorization: Bearer jwt_token`
 - **Request Parameters:**
 	- Pagination: `page=<page_number>&size=<page_size>`
 - **Response Body:**

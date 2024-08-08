@@ -7,7 +7,7 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 ---
 
 
-## Step 1: Traffic Estimation
+### Step 1: Traffic Estimation
 
 1. **QPS (Queries Per Second) Estimation**
 

@@ -16,25 +16,25 @@ Zookeeper를 이용해 노드 별로 생성할 수 있는 키 범위를 정하�
 auto-increment 사용 시 PostgreSQL기준으로 1ms에 약 1000개의 키 생성이 가능한데 트래픽이 많은 인스타그램에서는 이러한 제한으로 병목현상이 생긴다고 한다. 나는 Primary Key를 auto-increment로 생성해서 사용하는 방법만 해봤는데 아무래도 서비스 규모가 다르다보니 글로벌 서비스에서는 Primary Key 생성하는데도 상당한 고민이 필요해보인다. 
 
 
-#### 1. Key Features of Instagram's ID Generation:
+#### 1. Key Features of Instagram's ID Generation
 
 - **Sortable by Time:** IDs are time-sortable, allowing easy chronological ordering of content.
 - **64-bit IDs:** Smaller index size and better storage in systems like Redis.
 - **Minimal Complexity:** Keep the system simple and minimize additional components.
 
-#### 2. Structure of the Generated IDs:
+#### 2. Structure of the Generated IDs
 
 - **41 bits for Timestamp:** Represents milliseconds since a custom epoch (e.g., January 1, 2011).
 - **13 bits for Logical Shard ID:** Identifies the logical shard.
 - **10 bits for Sequence Number:** Allows for up to 1024 unique IDs per millisecond per shard.
 
-#### 3. ID Generation Algorithm:
+#### 3. ID Generation Algorithm
 
 1. **Timestamp:** The first 41 bits are the number of milliseconds since a predefined epoch.
 2. **Logical Shard ID:** The next 13 bits represent the logical shard ID, which helps in distributing data across multiple shards.
 3. **Sequence Number:** The final 10 bits are a sequence number, which is reset every millisecond, allowing for 1024 unique IDs per millisecond per shard.
 
-#### 4. Implementation in PostgreSQL:
+#### 4. Implementation in PostgreSQL
 
 
 
@@ -68,7 +68,7 @@ $$ LANGUAGE PLPGSQL;
 
 
 
-#### 5. Table Creation with the Custom ID:
+#### 5. Table Creation with the Custom ID
 
 
 When creating a table for storing content, the custom ID generation function can be used as the default value for the primary key:
@@ -91,7 +91,7 @@ CREATE TABLE Content (
 
 
 
-#### Summary:
+#### Summary
 
 - **Timestamp (41 bits):** Ensures IDs are sortable by time.
 - **Shard ID (13 bits):** Distributes data across logical shards.

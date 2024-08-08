@@ -7,16 +7,16 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 ---
 
 
+### 1. Shorten Url
 
-{% raw %}
-```markdown
-```
-{% endraw %}
+- **Endpoint:** `POST /api/v1/url`
+- **Method:** `POST`
+- **Description:** Created a new shorten url.
+- **Request Header:**
 
+	`Authorization: Bearer jwt_token`
 
-
-**Request Body:**
-
+- **Request Body:**
 
 
 {% raw %}
@@ -37,6 +37,7 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 
 {% raw %}
 ```json
+json코드 복사
 {
   "url_key": 123,
   "original_url": "http://example.com",
@@ -60,7 +61,7 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 - **401 Unauthorized:** Invalid or missing `api_dev_key`.
 - **429 Too Many Requests:** Rate limit exceeded.
 
-#### 2. Get Original URL API
+#### 2. Get Shorten Url
 
 
 **Endpoint:** `/api/v1/url/{url_key}`
@@ -75,7 +76,7 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 
 {% raw %}
 ```json
-
+json코드 복사
 {
   "api_dev_key": "your_api_dev_key_here"
 }
@@ -94,7 +95,7 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 #### 3. Redirect to Original URL API
 
 
-**Endpoint:** `/{url_key}`
+**Endpoint:** `/{url_id}`
 
 
 **Method:** `GET`
@@ -109,7 +110,7 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 #### 4. Delete Shortened URL API
 
 
-**Endpoint:** `/api/v1/url/{url_key}`
+**Endpoint:** `/api/v1/url/{url_id}`
 
 
 **Method:** `DELETE`
@@ -121,7 +122,6 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 
 {% raw %}
 ```json
-
 {
   "api_dev_key": "your_api_dev_key_here"
 }
