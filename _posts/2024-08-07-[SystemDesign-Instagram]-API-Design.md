@@ -17,9 +17,7 @@ categories: [SystemDesign, Problems, Instagram, ]
 - **Request Body (multipart/form-data):**
 	- `content_name:` The name of the content (string).
 	- `photo:` The photo file to upload (file).
-
-#### Request Header Example
-
+- **Request Header:**
 
 
 {% raw %}
