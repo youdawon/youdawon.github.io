@@ -13,7 +13,9 @@ categories: [SystemDesign, Problems, Pastebin, ]
 - **Method:** `POST`
 - **Description:** Create a new paste.
 - **Request Header:**
-	- Optional: `Authorization: Bearer jwt_token`
+
+	`Authorization: Bearer jwt_token`
+
 - **Request Body:**
 
 
@@ -22,7 +24,7 @@ categories: [SystemDesign, Problems, Pastebin, ]
 	{
 	  "content": "text12123",
 	  "expiration_date": "2024-08-05T12:34:56Z",  // optional
-	  "user_id": "user",  // optional
+	  "user_id": "user",  
 	  "url_alias": "test"  // optional
 	}
 ```
@@ -49,6 +51,10 @@ categories: [SystemDesign, Problems, Pastebin, ]
 - **Endpoint:** `GET /api/v1/pastebin/{url_key}`
 - **Method:** `GET`
 - **Description:** Retrieve a paste by URL key.
+- **Request Header:**
+
+`Authorization: Bearer jwt_token`
+
 - **Response Body:**
 
 
