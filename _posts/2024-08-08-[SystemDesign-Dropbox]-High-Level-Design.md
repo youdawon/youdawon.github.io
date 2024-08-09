@@ -7,7 +7,7 @@ categories: [SystemDesign, Problems, Dropbox, ]
 ---
 
 
-### **1. Initial File Upload Request:**
+### 1. Initial File Upload Request:
 
 - **1.1. User Action:** The user selects a file to upload from their local device.
 - **1.2. Local Preparation:** The client app divides the file into chunks and stores metadata about each chunk (e.g., chunk number, size, state) in the local database.
