@@ -10,13 +10,13 @@ categories: [Tech, ]
 Dropbox 설계 문제 풀면서 갑자기 헷갈려서 정리해보았다. 
 
 
-#### 1. Message Broker 
+#### **1. Message Broker**
 
 
 Stores and forwards messages from producers to consumers, ensuring reliable delivery even when consumers are not immediately available. Operates mainly on a First-In-First-Out (FIFO) basis.
 
 
-#### 2. Message Queue
+#### **2. Message Queue**
 
 
 Extends the functionality of a message queue by routing, transforming, and filtering messages. It manages complex communication patterns like Publish/Subscribe, directing messages to the appropriate consumers based on predefined rules.
@@ -36,4 +36,4 @@ In an e-commerce platform:
 #### **4. Common Tools**
 
 - **Message Brokers**: RabbitMQ, Apache Kafka, ActiveMQ, Amazon SNS, Azure Service Bus
-- **Message Queues**: Amazon SQS, Redis, Beanstalkd, Azure Queue Storage, IronMQ
+- **Message Queues**: Amazon SQS, Redis, Azure Queue Storage
