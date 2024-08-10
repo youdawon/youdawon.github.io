@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-07
-title: "[SystemDesign-Pastebin] System flows and High Level Design"
+title: "[SystemDesign-Pastebin] System flows and"
 tags: [SystemDesign, Architecture, Pastebin, ]
 categories: [SystemDesign, Problems, Pastebin, ]
 ---
@@ -54,5 +54,5 @@ categories: [SystemDesign, Problems, Pastebin, ]
 #### High Level Design
 
 
-![0](/assets/img/2024-08-07-[SystemDesign-Pastebin]-System-flows-and-High-Level-Design.md/0.png)
+![0](/assets/img/2024-08-07-[SystemDesign-Pastebin]-System-flows-and.md/0.png)
 
