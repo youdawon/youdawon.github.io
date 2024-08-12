@@ -19,7 +19,7 @@ categories: [SystemDesign, Problems, FacebookMessenger, ]
 | creation_date   | datetime  |                      | NO       |
 | last_login_date | datetime  |                      | NO       |
 
-1. Chat
+undefined1. Chat
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -28,7 +28,7 @@ categories: [SystemDesign, Problems, FacebookMessenger, ]
 | is_group_chat | boolean   |           | NO       |
 | creation_date | datetime  |           | NO       |
 
-1. ChatUser
+undefined1. ChatUser
 
 | Column      | Data Type | Attribute | Nullable |
 | ----------- | --------- | --------- | -------- |
@@ -36,8 +36,8 @@ categories: [SystemDesign, Problems, FacebookMessenger, ]
 | user_id     | int       | PK, FK    | NO       |
 | joined_date | datetime  |           | NO       |
 
-
-#### 2. NoSQL
+undefined
+### 2. NoSQL
 
 
 key : user_id#chat_id#timestamp

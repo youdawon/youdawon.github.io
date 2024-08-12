@@ -19,8 +19,8 @@ categories: [SystemDesign, Problems, Instagram, ]
 | `creation_date`   | `datetime(4)` |           | No       |
 | `last_login_date` | `datetime(4)` |           | No       |
 
-
-#### 2.Userfollower Table
+undefined
+### 2.Userfollower Table
 
 
 | Column        | Data Type | Attribute | Nullable |
@@ -28,8 +28,8 @@ categories: [SystemDesign, Problems, Instagram, ]
 | `follower_id` | `int`     | PK        | No       |
 | `followee_id` | `int`     | PK        | No       |
 
-
-#### 3.Content Table
+undefined
+### 3.Content Table
 
 
 | Column          | Data Type      | Attribute | Nullable |
@@ -40,8 +40,8 @@ categories: [SystemDesign, Problems, Instagram, ]
 | `content_url`   | `varchar(100)` |           | No       |
 | `creation_date` | `datetime`     |           | No       |
 
-
-#### 4.NewsFeed Table
+undefined
+### 4.NewsFeed Table
 
 
 | Column          | Data Type  | Attribute | Nullable |
@@ -51,3 +51,4 @@ categories: [SystemDesign, Problems, Instagram, ]
 | `content_id`    | `int`      | FK        | No       |
 | `creation_date` | `datetime` |           | No       |
 
+undefined

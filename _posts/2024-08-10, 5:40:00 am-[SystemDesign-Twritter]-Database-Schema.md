@@ -16,7 +16,7 @@ categories: [SystemDesign, Problems, Twitter, ]
 | creation_date   | datetime  |           | NO       |
 | last_login_date | datetime  |           | NO       |
 
-1. UserFollow
+undefined1. UserFollow
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -24,7 +24,7 @@ categories: [SystemDesign, Problems, Twitter, ]
 | followee_id   | bigint    | PK, FK    | NO       |
 | creation_date | datetime  |           | NO       |
 
-1. Tweet
+undefined1. Tweet
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -33,7 +33,7 @@ categories: [SystemDesign, Problems, Twitter, ]
 | content       | text      |           | YES      |
 | creation_date | datetime  |           | NO       |
 
-1. File
+undefined1. File
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -43,7 +43,7 @@ categories: [SystemDesign, Problems, Twitter, ]
 | file_url      | varchar   |           | NO       |
 | creation_date | datetime  |           | NO       |
 
-1. Favourite
+undefined1. Favourite
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -51,7 +51,7 @@ categories: [SystemDesign, Problems, Twitter, ]
 | user_id       | bigint    | PK        | NO       |
 | creation_date | datetime  |           | NO       |
 
-1. Reply
+undefined1. Reply
 
 | Column          | Data Type | Attribute | Nullable |
 | --------------- | --------- | --------- | -------- |
@@ -62,3 +62,4 @@ categories: [SystemDesign, Problems, Twitter, ]
 | reply_content   | text      |           | NO       |
 | creation_date   | datetime  |           | NO       |
 
+undefined

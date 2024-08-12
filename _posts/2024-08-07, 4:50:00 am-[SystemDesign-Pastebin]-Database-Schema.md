@@ -18,8 +18,8 @@ categories: [SystemDesign, Problems, Pastebin, ]
 | `creation_date`   | `datetime`     |           | No       |
 | `expiration_date` | `datetime`     |           | No       |
 
-
-#### 2.User Table
+undefined
+### 2.User Table
 
 
 | Column            | Data Type     | Attribute | Nullable |
@@ -29,3 +29,4 @@ categories: [SystemDesign, Problems, Pastebin, ]
 | `creation_date`   | `datetime`    |           | No       |
 | `last_login_date` | `datetime`    |           | No       |
 
+undefined
