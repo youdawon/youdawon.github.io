@@ -16,6 +16,11 @@ function escapeCodeBlock(body) {
   });
 }
 
+function escapeUndefined(body) {
+  const regex = /```([\s\S]*?)```/g;
+    return body.replaceAll("undefined", "");
+}
+
 function makeMarkdownTitle(body) {
     return body.replaceAll("\n\n#", "\n\n##");
 }
@@ -56,10 +61,10 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
   for (const r of pages) {
     const id = r.id;
     // date
-    let date = moment(r.created_time).format("YYYY-MM-DD");
+    let date = moment(r.created_time).format("YYYY-MM-DD, hh:mm:ss");
     let pdate = r.properties?.["날짜"]?.["date"]?.["start"];
     if (pdate) {
-      date = moment(pdate).format("YYYY-MM-DD");
+      date = moment(pdate).format("YYYY-MM-DD, h:mm:ss a");
     }
     // title
     let title = id;
@@ -117,6 +122,7 @@ title: "${title}"${fmtags}${fmcats}
     }
     console.log(md);
     md = escapeCodeBlock(md);
+    md = escapeUndefined(md);
     md = makeMarkdownTitle(md);
 
     const ftitle = `${date}-${title.replaceAll(" ", "-")}.md`;
