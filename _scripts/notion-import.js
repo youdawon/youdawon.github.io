@@ -59,7 +59,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
     let date = moment(r.created_time).format("YYYY-MM-DD");
     let pdate = r.properties?.["날짜"]?.["date"]?.["start"];
     if (pdate) {
-      date = moment(pdate).format("YYYY-MM-DD, h:mm:ss a");
+      date = moment(pdate).format("YYYY-MM-DD");
     }
     // title
     let title = id;
