@@ -51,8 +51,5 @@ categories: [SystemDesign, Problems, Pastebin, ]
 3. **Update Key-DB:** Server moves the unique key from the `used_keys` collection back to the `ready_keys` collection in NoSQL.
 4. **Cleanup Batch Job:** Periodically scans and deletes expired entries, recycling keys.
 
-#### High Level Design
-
-
 ![0](/assets/img/2024-08-07-[SystemDesign-Pastebin]-System-flows-.md/0.png)
 

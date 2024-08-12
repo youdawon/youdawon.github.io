@@ -102,8 +102,5 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 1. **Regular Backups**:
 	- Regularly backs up database and cache data and establishes recovery procedures.
 
-#### High Level Design
-
-
 ![0](/assets/img/2024-08-07-[SystemDesign-URL-Shortener]-System-flows-.md/0.png)
 

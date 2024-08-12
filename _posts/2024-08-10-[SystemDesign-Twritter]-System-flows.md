@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-10
-title: "[SystemDesign-Twritter] API Design"
+title: "[SystemDesign-Twritter] System flows"
 tags: [SystemDesign, Architecture, Twitter, ]
 categories: [SystemDesign, Problems, Twitter, ]
 ---
@@ -61,5 +61,8 @@ user_id로 샤딩을 했을 경우 한 서버에 사용자의 트윗 정보가 �
 4. **캐싱 전략**:
 	- 인기 있는 트윗이나 특정 시간대에 생성된 트윗은 캐싱하여, 반복 조회 시 데이터베이스에 부담을 줄이고 응답 시간을 단축할 수 있다.
 
-![0](/assets/img/2024-08-10-[SystemDesign-Twritter]-API-Design.md/0.png)
+플로우를 더 자세히 그리고 싶었는데 다 그리기엔 너무 복잡해져서 생략된 부분이 있다. 나중에 수정해야할듯하다.
+
+
+![0](/assets/img/2024-08-10-[SystemDesign-Twritter]-System-flows.md/0.png)
 
