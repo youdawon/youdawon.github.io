@@ -127,3 +127,25 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 {% endraw %}
 
 
+
+#### 4. Like/Disilke Video
+
+- **Endpoint:** `POST /api/v1/youtube/like`
+- **Method:** `POST`
+- **Description:** like/dislike a video
+- **Request Body :**
+	- `video_id`
+	- `like_yn:` The name of the video (string).
+- **Response Body:**
+
+
+{% raw %}
+```json
+{
+  "video_id": 123,
+  "like_yn": "Y" //Y:like, N:dislike, C:cancel
+}
+```
+{% endraw %}
+
+
