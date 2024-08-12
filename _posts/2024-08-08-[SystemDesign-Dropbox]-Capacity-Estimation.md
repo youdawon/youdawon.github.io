@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-08, 5:35:00 am
+date: 2024-08-08
 title: "[SystemDesign-Dropbox] Capacity Estimation"
 tags: [SystemDesign, Architecture, Dropbox, ]
 categories: [SystemDesign, Problems, Dropbox, ]

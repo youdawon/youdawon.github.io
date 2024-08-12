@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-10, 5:40:00 am
+date: 2024-08-10
 title: "[SystemDesign-Facebook Messenger] Database Schema"
 tags: [SystemDesign, Architecture, FacebookMessenger, ]
 categories: [SystemDesign, Problems, FacebookMessenger, ]

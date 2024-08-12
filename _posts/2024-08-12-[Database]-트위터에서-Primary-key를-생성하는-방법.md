@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-12, 3:30:00 am
+date: 2024-08-12
 title: "[Database] 트위터에서 Primary key를 생성하는 방법"
 tags: [Dabatabse, Twitter, Architecture, ]
 categories: [Database, ]

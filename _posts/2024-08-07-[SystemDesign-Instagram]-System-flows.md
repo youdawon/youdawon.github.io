@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-07, 8:40:00 am
+date: 2024-08-07
 title: "[SystemDesign-Instagram] System flows"
 tags: [SystemDesign, Architecture, Instagram, ]
 categories: [SystemDesign, Problems, Instagram, ]
@@ -95,5 +95,5 @@ categories: [SystemDesign, Problems, Instagram, ]
 - **Message Processing:** On receiving a message, the Newsfeed Generation Service updates the newsfeed table in the metadata database and updates the cache.
 - **Kafka Cluster:** Set up a Kafka cluster with sufficient brokers to handle your expected load and ensure high availability.
 
-![0](/assets/img/2024-08-07, 8:40:00 am-[SystemDesign-Instagram]-System-flows.md/0.png)
+![0](/assets/img/2024-08-07-[SystemDesign-Instagram]-System-flows.md/0.png)
 

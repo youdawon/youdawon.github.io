@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-08, 5:40:00 am
+date: 2024-08-08
 title: "[SystemDesign-Dropbox] System flows"
 tags: [SystemDesign, Architecture, Dropbox, ]
 categories: [SystemDesign, Problems, Dropbox, ]
@@ -48,5 +48,5 @@ categories: [SystemDesign, Problems, Dropbox, ]
 	- **6.1.2. Client Notification:** The Event Broker notifies the client about the remote change.
 - **6.2. Change Handling:** The client processes the notification, updates its local database, and downloads any necessary changes.
 
-![0](/assets/img/2024-08-08, 5:40:00 am-[SystemDesign-Dropbox]-System-flows.md/0.png)
+![0](/assets/img/2024-08-08-[SystemDesign-Dropbox]-System-flows.md/0.png)
 

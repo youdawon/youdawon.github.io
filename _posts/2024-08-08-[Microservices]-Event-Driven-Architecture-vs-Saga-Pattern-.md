@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-08, 4:50:00 am
+date: 2024-08-08
 title: "[Microservices] Event-Driven Architecture vs Saga Pattern "
 tags: [Microservices, ]
 categories: [Microservices, ]

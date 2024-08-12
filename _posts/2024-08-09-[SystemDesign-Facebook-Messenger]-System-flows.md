@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-09, 10:50:00 am
+date: 2024-08-09
 title: "[SystemDesign-Facebook Messenger] System flows"
 tags: [SystemDesign, Architecture, FacebookMessenger, ]
 categories: [SystemDesign, Problems, FacebookMessenger, ]
@@ -20,5 +20,5 @@ categories: [SystemDesign, Problems, FacebookMessenger, ]
 5. **Notification Handling**:
 	- **Notification Servers** send push notifications to offline users to alert them of new messages.
 
-![0](/assets/img/2024-08-09, 10:50:00 am-[SystemDesign-Facebook-Messenger]-System-flows.md/0.png)
+![0](/assets/img/2024-08-09-[SystemDesign-Facebook-Messenger]-System-flows.md/0.png)
 

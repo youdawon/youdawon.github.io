@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2024-08-07, 4:32:00 am
-title: "[SystemDesign-URL Shortener] Database Schema"
-tags: [SystemDesign, UrlShortener, Architecture, ]
-categories: [SystemDesign, Problems, UrlShortener, ]
+date: 2024-08-07
+title: "[SystemDesign-Pastebin] Database Schema"
+tags: [SystemDesign, Architecture, Pastebin, ]
+categories: [SystemDesign, Problems, Pastebin, ]
 ---
 
 

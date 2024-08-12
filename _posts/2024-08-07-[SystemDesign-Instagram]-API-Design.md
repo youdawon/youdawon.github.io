@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-07, 6:00:00 am
+date: 2024-08-07
 title: "[SystemDesign-Instagram] API Design"
 tags: [SystemDesign, Architecture, Instagram, ]
 categories: [SystemDesign, Problems, Instagram, ]

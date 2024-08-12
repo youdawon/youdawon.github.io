@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-07, 4:33:00 am
+date: 2024-08-07
 title: "[SystemDesign-URL Shortener] API Design"
 tags: [SystemDesign, UrlShortener, Architecture, ]
 categories: [SystemDesign, Problems, UrlShortener, ]

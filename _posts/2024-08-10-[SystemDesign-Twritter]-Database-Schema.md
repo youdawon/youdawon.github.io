@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-10, 5:40:00 am
+date: 2024-08-10
 title: "[SystemDesign-Twritter] Database Schema"
 tags: [SystemDesign, Architecture, Twitter, ]
 categories: [SystemDesign, Problems, Twitter, ]

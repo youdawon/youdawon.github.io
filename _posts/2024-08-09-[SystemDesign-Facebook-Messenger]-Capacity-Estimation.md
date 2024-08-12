@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-09, 6:05:00 am
+date: 2024-08-09
 title: "[SystemDesign-Facebook Messenger] Capacity Estimation"
 tags: [SystemDesign, Architecture, FacebookMessenger, ]
 categories: [SystemDesign, Problems, FacebookMessenger, ]

@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-07, 5:41:00 am
+date: 2024-08-07
 title: "[SystemDesign-Instagram] Database Schema"
 tags: [SystemDesign, Architecture, Instagram, ]
 categories: [SystemDesign, Problems, Instagram, ]

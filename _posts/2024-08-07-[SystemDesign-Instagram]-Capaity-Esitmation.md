@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-07, 5:34:00 am
+date: 2024-08-07
 title: "[SystemDesign-Instagram] Capaity Esitmation"
 tags: [SystemDesign, Architecture, Instagram, ]
 categories: [SystemDesign, Problems, Instagram, ]

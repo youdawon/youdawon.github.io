@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-07, 4:34:00 am
+date: 2024-08-07
 title: "[SystemDesign-URL Shortener] System flows "
 tags: [SystemDesign, UrlShortener, Architecture, ]
 categories: [SystemDesign, Problems, UrlShortener, ]
@@ -102,5 +102,5 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 1. **Regular Backups**:
 	- Regularly backs up database and cache data and establishes recovery procedures.
 
-![0](/assets/img/2024-08-07, 4:34:00 am-[SystemDesign-URL-Shortener]-System-flows-.md/0.png)
+![0](/assets/img/2024-08-07-[SystemDesign-URL-Shortener]-System-flows-.md/0.png)
 
