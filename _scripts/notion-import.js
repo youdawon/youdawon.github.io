@@ -60,7 +60,7 @@ const n2m = new NotionToMarkdown({ notionClient: notion });
   for (const r of pages) {
     const id = r.id;
     // date
-    let date = moment(r.created_time).format("YYYY-MM-DD, hh:mm:ss");
+    let date = moment(r.created_time).format("YYYY-MM-DD");
     let pdate = r.properties?.["날짜"]?.["date"]?.["start"];
     if (pdate) {
       date = moment(pdate).format("YYYY-MM-DD, h:mm:ss a");
