@@ -16,10 +16,6 @@ function escapeCodeBlock(body) {
   });
 }
 
-function escapeUndefined(body) {
-    return body.replaceAll("undefined", "");
-}
-
 function makeMarkdownTitle(body) {
     return body.replaceAll("\n\n#", "\n\n##");
 }
@@ -121,7 +117,6 @@ title: "${title}"${fmtags}${fmcats}
     }
     console.log(md);
     md = escapeCodeBlock(md);
-    md = escapeUndefined(md);
     md = makeMarkdownTitle(md);
 
     const ftitle = `${date}-${title.replaceAll(" ", "-")}.md`;
