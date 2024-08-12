@@ -10,37 +10,37 @@ categories: [Microservices, ]
 예전 Microservices 구조의 프로젝트를 할 때 공부했던 부분을 다시 정리해봤다. 공부할 땐 사실 무슨말인지 잘 몰랐는데 실제로 서비스에 적용해보고 공부하면서 서비스 구조를 생각해보니 더 잘 이해가 된다. Saga Pattern이랑 Event-Driven Architecture의 차이가 헷갈렸는데 내가 개발한 부분은 Event-Driven Architecture에 가까운 것으로 보인다. 
 
 
-### 1. Saga Pattern
+#### 1. 사가 패턴 (Saga Pattern)
 
 
-The Saga is a design pattern for managing distributed transactions. Instead of a single monolithic transaction, a Saga splits the transaction into a series of smaller, isolated steps, each with its own compensating transaction to undo the operation if necessary.
+사가(Saga)는 분산된 트랜잭션을 관리하기 위한 디자인 패턴이다. 단일 모놀리식 트랜잭션 대신, 사가는 트랜잭션을 일련의 더 작고 고립된 단계로 나누며, 각 단계는 필요한 경우 작업을 되돌릴 수 있는 보상 트랜잭션을 가지고 있다. 
 
 
-#### 1.1 Use Cases
+#### 1.1 사용 사례
 
-- Financial transactions involving multiple services (e.g., order processing in e-commerce).
+- 여러 서비스가 관여하는 금융 거래 (예: 전자 상거래에서의 주문 처리).
 
-#### 1.2 Example
+#### 1.2 예시
 
-1. **Order Service** creates an order.
-2. **Payment Service** processes the payment.
-3. **Inventory Service** reserves the items.
-4. **Shipping Service** prepares for shipment.
-5. If any step fails, compensating actions are taken to undo the previous steps.
+- 주문 서비스가 주문을 생성한다.
+- 결제 서비스가 결제를 처리한다.
+- 재고 서비스가 상품을 예약한다.
+- 배송 서비스가 배송 준비를 한다.
+- 어떤 단계에서든 실패하면 이전 단계들을 되돌리기 위한 보상 작업이 수행된다.
 
-### 2. Event-Driven Architecture
-
-
-Event-Driven Architecture is a design pattern where services communicate through events. An event is a significant change in state, such as an item being added to a shopping cart. Services react to these events asynchronously, enabling loose coupling and high scalability.
+#### 2. 이벤트 중심 아키텍처 (Event-Driven Architecture)
 
 
-#### 2.1 Use Cases
+이벤트 중심 아키텍처는 서비스들이 이벤트를 통해 통신하는 디자인 패턴이다. 이벤트는 쇼핑 카트에 아이템이 추가되는 것과 같은 중요한 상태 변화를 나타낸다. 서비스들은 이러한 이벤트에 비동기적으로 반응하여 느슨한 결합과 높은 확장성을 가능하게 한다.
 
-- Real-time data processing (e.g., IoT applications, user activity tracking).
-- Systems requiring high scalability and flexibility (e.g., microservices architectures).
 
-#### 2.2 Example
+#### 2.1 사용 사례
 
-1. **User Service** creates a user account and publishes a `UserCreated` event.
-2. **Email Service** listens for `UserCreated` events and sends a welcome email.
-3. **Analytics Service** listens for `UserCreated` events and updates user statistics.
+- 실시간 데이터 처리 (예: IoT 애플리케이션, 사용자 활동 추적).
+- 높은 확장성과 유연성을 요구하는 시스템 (예: 마이크로서비스 아키텍처).
+
+#### 2.2 예시
+
+- 사용자 서비스가 사용자 계정을 생성하고 UserCreated 이벤트를 발행
+- 이메일 서비스가 UserCreated 이벤트를 감지하고 환영 이메일을 전송
+- 분석 서비스가 UserCreated 이벤트를 감지하고 사용자 통계를 업데이트
