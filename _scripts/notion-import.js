@@ -17,7 +17,6 @@ function escapeCodeBlock(body) {
 }
 
 function escapeUndefined(body) {
-  const regex = /```([\s\S]*?)```/g;
     return body.replaceAll("undefined", "");
 }
 
