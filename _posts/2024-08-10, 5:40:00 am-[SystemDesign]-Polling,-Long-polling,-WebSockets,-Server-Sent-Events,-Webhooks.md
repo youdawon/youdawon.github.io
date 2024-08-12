@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-10
+date: 2024-08-10, 5:40:00 am
 title: "[SystemDesign] Polling, Long-polling, WebSockets, Server-Sent Events, Webhooks"
 tags: [SystemDesign, Architecture, ]
 categories: [SystemDesign, Basics, ]

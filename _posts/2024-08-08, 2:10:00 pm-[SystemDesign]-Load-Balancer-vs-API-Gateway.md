@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-08
+date: 2024-08-08, 2:10:00 pm
 title: "[SystemDesign] Load Balancer vs API Gateway"
 tags: [SystemDesign, Architecture, ]
 categories: [SystemDesign, Basics, ]

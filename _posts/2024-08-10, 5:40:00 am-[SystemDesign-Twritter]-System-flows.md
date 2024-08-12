@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-10
+date: 2024-08-10, 5:40:00 am
 title: "[SystemDesign-Twritter] System flows"
 tags: [SystemDesign, Architecture, Twitter, ]
 categories: [SystemDesign, Problems, Twitter, ]
@@ -40,5 +40,5 @@ categories: [SystemDesign, Problems, Twitter, ]
 - **SQL and NoSQL Replication**: Both the SQL and NoSQL databases are replicated. For SQL, this includes creating read-only replicas to distribute the read load and ensure high availability. For NoSQL, replication ensures data redundancy and improves the system's resilience to failures.
 - 
 
-![0](/assets/img/2024-08-10-[SystemDesign-Twritter]-System-flows.md/0.png)
+![0](/assets/img/2024-08-10, 5:40:00 am-[SystemDesign-Twritter]-System-flows.md/0.png)
 

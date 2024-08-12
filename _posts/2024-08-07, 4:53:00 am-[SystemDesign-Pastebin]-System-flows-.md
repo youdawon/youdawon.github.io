@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-07
+date: 2024-08-07, 4:53:00 am
 title: "[SystemDesign-Pastebin] System flows "
 tags: [SystemDesign, Architecture, Pastebin, ]
 categories: [SystemDesign, Problems, Pastebin, ]
@@ -51,5 +51,5 @@ categories: [SystemDesign, Problems, Pastebin, ]
 3. **Update Key-DB:** Server moves the unique key from the `used_keys` collection back to the `ready_keys` collection in NoSQL.
 4. **Cleanup Batch Job:** Periodically scans and deletes expired entries, recycling keys.
 
-![0](/assets/img/2024-08-07-[SystemDesign-Pastebin]-System-flows-.md/0.png)
+![0](/assets/img/2024-08-07, 4:53:00 am-[SystemDesign-Pastebin]-System-flows-.md/0.png)
 

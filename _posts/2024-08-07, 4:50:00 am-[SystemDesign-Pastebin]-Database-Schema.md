@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-07
+date: 2024-08-07, 4:50:00 am
 title: "[SystemDesign-Pastebin] Database Schema"
 tags: [SystemDesign, Architecture, Pastebin, ]
 categories: [SystemDesign, Problems, Pastebin, ]
@@ -18,8 +18,8 @@ categories: [SystemDesign, Problems, Pastebin, ]
 | `creation_date`   | `datetime`     |           | No       |
 | `expiration_date` | `datetime`     |           | No       |
 
-undefined
-### 2.User Table
+
+#### 2.User Table
 
 
 | Column            | Data Type     | Attribute | Nullable |
@@ -29,4 +29,3 @@ undefined
 | `creation_date`   | `datetime`    |           | No       |
 | `last_login_date` | `datetime`    |           | No       |
 
-undefined

@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-07
+date: 2024-08-07, 4:14:00 am
 title: "[Git] The requested URL returned error: 403 에러 해결 방법"
 tags: [Git, ]
 categories: [Git, ]

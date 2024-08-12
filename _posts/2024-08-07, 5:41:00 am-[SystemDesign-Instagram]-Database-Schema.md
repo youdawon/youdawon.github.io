@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-07
+date: 2024-08-07, 5:41:00 am
 title: "[SystemDesign-Instagram] Database Schema"
 tags: [SystemDesign, Architecture, Instagram, ]
 categories: [SystemDesign, Problems, Instagram, ]
@@ -19,8 +19,8 @@ categories: [SystemDesign, Problems, Instagram, ]
 | `creation_date`   | `datetime(4)` |           | No       |
 | `last_login_date` | `datetime(4)` |           | No       |
 
-undefined
-### 2.Userfollower Table
+
+#### 2.Userfollower Table
 
 
 | Column        | Data Type | Attribute | Nullable |
@@ -28,8 +28,8 @@ undefined
 | `follower_id` | `int`     | PK        | No       |
 | `followee_id` | `int`     | PK        | No       |
 
-undefined
-### 3.Content Table
+
+#### 3.Content Table
 
 
 | Column          | Data Type      | Attribute | Nullable |
@@ -40,8 +40,8 @@ undefined
 | `content_url`   | `varchar(100)` |           | No       |
 | `creation_date` | `datetime`     |           | No       |
 
-undefined
-### 4.NewsFeed Table
+
+#### 4.NewsFeed Table
 
 
 | Column          | Data Type  | Attribute | Nullable |
@@ -51,4 +51,3 @@ undefined
 | `content_id`    | `int`      | FK        | No       |
 | `creation_date` | `datetime` |           | No       |
 
-undefined

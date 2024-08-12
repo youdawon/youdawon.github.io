@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-11
+date: 2024-08-11, 2:18:00 am
 title: "[Algorithm] Kadane’s Algorithm"
 tags: [Algorithm, ]
 categories: [Algorithm, ]

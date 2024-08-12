@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-10
+date: 2024-08-10, 5:40:00 am
 title: "[SystemDesign-Facebook Messenger] Database Schema"
 tags: [SystemDesign, Architecture, FacebookMessenger, ]
 categories: [SystemDesign, Problems, FacebookMessenger, ]
@@ -19,7 +19,7 @@ categories: [SystemDesign, Problems, FacebookMessenger, ]
 | creation_date   | datetime  |                      | NO       |
 | last_login_date | datetime  |                      | NO       |
 
-undefined1. Chat
+1. Chat
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -28,7 +28,7 @@ undefined1. Chat
 | is_group_chat | boolean   |           | NO       |
 | creation_date | datetime  |           | NO       |
 
-undefined1. ChatUser
+1. ChatUser
 
 | Column      | Data Type | Attribute | Nullable |
 | ----------- | --------- | --------- | -------- |
@@ -36,8 +36,8 @@ undefined1. ChatUser
 | user_id     | int       | PK, FK    | NO       |
 | joined_date | datetime  |           | NO       |
 
-undefined
-### 2. NoSQL
+
+#### 2. NoSQL
 
 
 key : user_id#chat_id#timestamp
