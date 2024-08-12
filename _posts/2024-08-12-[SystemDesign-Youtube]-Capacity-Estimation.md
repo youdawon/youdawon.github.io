@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2024-08-12
-title: "[SystemDesign-Youtube] Capacitiy Estimation"
+title: "[SystemDesign-Youtube] Capacity Estimation"
 tags: [SystemDesign, Architecture, Youtube, ]
-categories: [SystemDesign, Youtube, ]
+categories: [SystemDesign, Problems, Youtube, ]
 ---
 
 
@@ -23,6 +23,9 @@ how many videos upload per second?
 
 
 	46296 / 200 = 230 video/sec
+
+
+Message Queue를 통해서 encoding시 몇 개의 encoding 서비스가 동시에 필요할까? 비디오를 인코딩하는 과정이 1분이 넘어가기 때문에 230 * 60분을 곱한 값이 encoding 서비스의 개수로 적정할 것이다.
 
 
 #### 1. Storage Estimates
@@ -53,7 +56,6 @@ Uploading each minute of the video takes 10MB
 {% raw %}
 ```text
 Write : 500hours * 60mins * 10MB = 300,000MB -> 300GB/min
-Read : 500hours *
 ```
 {% endraw %}
 
