@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-07-31
+date: 2024-08-12
 title: "[SystemDesign-Youtube] Capacitiy Estimation"
 tags: [SystemDesign, Architecture, Youtube, ]
 categories: [SystemDesign, Youtube, ]
