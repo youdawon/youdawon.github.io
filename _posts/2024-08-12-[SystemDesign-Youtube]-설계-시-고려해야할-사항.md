@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-08-13
+date: 2024-08-12
 title: "[SystemDesign-Youtube] 설계 시 고려해야할 사항"
 tags: [SystemDesign, Architecture, Youtube, ]
 categories: [SystemDesign, Problems, Youtube, ]
