@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-13
-title: "[SystemDesign - Typeahead Suggestion] Data Partitioning "
+title: "[SystemDesign-Typeahead Suggestion] Data Partitioning "
 tags: [SystemDesign, Architecture, Typeahead Suggestion, ]
 categories: [SystemDesign, Problems, Typeahead Suggestion, ]
 ---
