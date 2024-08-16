@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2024-08-09
-title: "[Tech] Message Broker vs Message Queue"
+title: "[SystemDesign] Message Broker vs Message Queue"
 tags: [MessageQueue, MessageBroker, ]
-categories: [Tech, ]
+categories: [SystemDesign, Basics, ]
 ---
 
 

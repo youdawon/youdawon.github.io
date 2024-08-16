@@ -2,7 +2,7 @@
 layout: post
 date: 2024-08-16
 title: "[SystemDesign-Twitter Search] Kafka 사용시 Streaming Indexing와 Real-time Indexing 차이점"
-tags: [SystemDesign, Architecture, Twitter Search, ]
+tags: [SystemDesign, Architecture, Kafka, ]
 categories: [SystemDesign, Problems, Twitter Search, ]
 ---
 
