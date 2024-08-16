@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-16
-title: "[SystemDesign-Twitter Search] Indexing Builder"
+title: "[SystemDesign-Twitter Search] Index Builder"
 tags: [SystemDesign, Architecture, Twitter Search, ]
 categories: [SystemDesign, Problems, Twitter Search, ]
 ---
