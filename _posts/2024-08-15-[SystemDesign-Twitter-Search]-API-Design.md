@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-15
-title: "[SystemDesign-Rate Limiter] API Design"
+title: "[SystemDesign-Twitter Search] API Design"
 tags: [SystemDesign, Architecture, Twitter Search, ]
 categories: [SystemDesign, Problems, Twitter Search, ]
 ---
@@ -12,7 +12,7 @@ categories: [SystemDesign, Problems, Twitter Search, ]
 - **Endpoint:** `GET /api/v1/twitter/search`
 - **Method:** `GET`
 - **Request Parameters:**
-	- `search_query=title`
+	- `terms=write keywords`
 	- `sort=1 //1:Latest(default), 2:Best Matched, 3:Most Liked`
 	- Pagination: `page=<page_number>&size=<page_size>&sort=<sort>`
 - **Response Body:**
