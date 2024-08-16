@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-16
-title: "[SystemDesign-Twitter Search] Index Server"
+title: "[SystemDesign] Index Server"
 tags: [SystemDesign, Architecture, Twitter Search, ]
 categories: [SystemDesign, Basics, ]
 ---
