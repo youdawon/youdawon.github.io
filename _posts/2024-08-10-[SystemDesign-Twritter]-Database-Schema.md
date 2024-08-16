@@ -16,7 +16,7 @@ categories: [SystemDesign, Problems, Twitter, ]
 | creation_date   | datetime  |           | NO       |
 | last_login_date | datetime  |           | NO       |
 
-undefined1. UserFollow
+1. UserFollow
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -24,7 +24,7 @@ undefined1. UserFollow
 | followee_id   | bigint    | PK, FK    | NO       |
 | creation_date | datetime  |           | NO       |
 
-undefined1. Tweet
+1. Tweet
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -33,7 +33,7 @@ undefined1. Tweet
 | content       | text      |           | YES      |
 | creation_date | datetime  |           | NO       |
 
-undefined1. File
+1. File
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -43,7 +43,7 @@ undefined1. File
 | file_url      | varchar   |           | NO       |
 | creation_date | datetime  |           | NO       |
 
-undefined1. Favourite
+1. Favourite
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -51,7 +51,7 @@ undefined1. Favourite
 | user_id       | bigint    | PK        | NO       |
 | creation_date | datetime  |           | NO       |
 
-undefined1. Reply
+1. Reply
 
 | Column          | Data Type | Attribute | Nullable |
 | --------------- | --------- | --------- | -------- |
@@ -62,4 +62,3 @@ undefined1. Reply
 | reply_content   | text      |           | NO       |
 | creation_date   | datetime  |           | NO       |
 
-undefined

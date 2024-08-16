@@ -18,8 +18,8 @@ categories: [SystemDesign, Problems, UrlShortener, ]
 | `creation_date`   | `datetime`     |           | No       |
 | `expiration_date` | `datetime`     |           | No       |
 
-undefined
-### 2.User Table
+
+#### 2.User Table
 
 
 | Column            | Data Type     | Attribute | Nullable |
@@ -29,4 +29,3 @@ undefined
 | `creation_date`   | `datetime`    |           | No       |
 | `last_login_date` | `datetime`    |           | No       |
 
-undefined

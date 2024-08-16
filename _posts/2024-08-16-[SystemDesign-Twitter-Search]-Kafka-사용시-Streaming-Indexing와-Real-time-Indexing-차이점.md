@@ -63,7 +63,7 @@ categories: [SystemDesign, Problems, Twitter Search, ]
 | **적용 범위**  | 단일 작업 또는 작은 규모의 시스템에 적합 | 대규모 데이터 처리, 여러 시스템 통합에 적합    |
 | **데이터 흐름** | 순차적 데이터 처리              | 병렬 데이터 처리                    |
 
-undefined
+
 ---
 
 

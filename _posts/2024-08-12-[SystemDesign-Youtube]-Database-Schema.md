@@ -15,7 +15,7 @@ categories: [SystemDesign, Problems, Youtube, ]
 | creation_date   | datetime  |           | No       |
 | last_login_date | datetime  |           | Yes      |
 
-undefined1. Video
+1. Video
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -29,7 +29,7 @@ undefined1. Video
 | dislike_cnt   | bigint    |           | NO       |
 | view_cnt      | bigint    |           | NO       |
 
-undefined1. Comment
+1. Comment
 
 | Column        | Data Type | Attribute | Nullable |
 | ------------- | --------- | --------- | -------- |
@@ -39,4 +39,3 @@ undefined1. Comment
 | comment       | text      |           | NO       |
 | creation_date | datetime  |           | NO       |
 
-undefined
