@@ -20,6 +20,10 @@ function makeMarkdownTitle(body) {
     return body.replaceAll("\n\n#", "\n\n##");
 }
 
+function removeUndefined(body) {
+    return body.replace(/undefined/g, '');
+}
+
 const n2m = new NotionToMarkdown({ notionClient: notion });
 
 (async () => {
@@ -117,6 +121,7 @@ title: "${title}"${fmtags}${fmcats}
     }
     console.log(md);
     md = escapeCodeBlock(md);
+    md = removeUndefined(md);    
     md = makeMarkdownTitle(md);
 
     const ftitle = `${date}-${title.replaceAll(" ", "-")}.md`;
