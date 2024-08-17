@@ -3,7 +3,7 @@ layout: post
 date: 2024-08-17
 title: "[Data structure] Tree 및 Leetcode 문제 정리"
 tags: [DataStructure, Tree, LeetCode, ]
-categories: [DataStructure, Tree, ]
+categories: [DataStructure, ]
 ---
 
 
@@ -198,7 +198,4 @@ categories: [DataStructure, Tree, ]
 #### 5. **면접 팁**
 
 - **기본기를 다져라**: 트리의 기본 개념과 각종 트리의 특징을 확실하게 이해하라.
-- **손코딩 연습**: 트리 순회, 삽입, 삭제, 탐색 등의 기본적인 알고리즘을 손코딩으로 연습하라.
-- **실전 문제 풀기**: 리트코드, 코드포스 등에서 트리 관련 문제를 많이 풀어보라.
-- **시간 복잡도 분석**: 트리 관련 알고리즘의 시간 복잡도를 정확히 이해하고 설명할 수 있도록 하라.
 - **경계 조건**: 트리 문제에서는 종종 경계 조건(예: 트리가 비었을 때, 단일 노드 트리 등)이 중요하다. 이를 잘 고려하도록 연습하라.
