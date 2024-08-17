@@ -28,7 +28,7 @@ categories: [DataStructure, Tree, ]
 
 
 {% raw %}
-```markdown
+```text
     1
    / \
   2   3
@@ -46,7 +46,7 @@ categories: [DataStructure, Tree, ]
 
 
 {% raw %}
-```markdown
+```text
       1
     /   \
    2     3
@@ -64,7 +64,7 @@ categories: [DataStructure, Tree, ]
 
 
 {% raw %}
-```markdown
+```text
     4
    / \
   2   6
@@ -82,7 +82,7 @@ categories: [DataStructure, Tree, ]
 
 
 {% raw %}
-```markdown
+```text
       5
     /   \
    3     8
@@ -101,7 +101,7 @@ categories: [DataStructure, Tree, ]
 
 
 {% raw %}
-```markdown
+```text
 markdown코드 복사
       7B
      /  \
@@ -147,7 +147,7 @@ markdown코드 복사
 
 
 {% raw %}
-```markdown
+```text
           11
          /  \
        3      8
@@ -166,7 +166,7 @@ markdown코드 복사
 
 
 {% raw %}
-```markdown
+```text
       10
      /  \
     9    8
