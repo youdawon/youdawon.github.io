@@ -2,7 +2,7 @@
 layout: post
 date: 2024-08-17
 title: "[Data structure] Tree 및 Leetcode 문제 정리"
-tags: [DataStructure, ]
+tags: [DataStructure, Tree, LeetCode, ]
 categories: [DataStructure, Tree, ]
 ---
 
@@ -83,11 +83,11 @@ categories: [DataStructure, Tree, ]
 
 {% raw %}
 ```text
-      5
+      4
     /   \
-   3     8
-  / \   / \
- 2   4 6   9
+   2     6
+        / \
+       5   7
 ```
 {% endraw %}
 
@@ -102,7 +102,6 @@ categories: [DataStructure, Tree, ]
 
 {% raw %}
 ```text
-markdown코드 복사
       7B
      /  \
    3R    10B
@@ -188,31 +187,15 @@ markdown코드 복사
 - **삭제(Deletion)**: 트리에서 노드를 제거하는 과정. 이진 탐색 트리에서는 삭제하려는 노드의 자식에 따라 다르게 처리함 (리프 노드, 자식이 하나인 노드, 자식이 두 개인 노드).
 - **탐색(Search)**: 트리에서 특정 값을 찾는 과정. 이진 탐색 트리에서는 O(log n) 시간 복잡도를 가짐.
 
-#### 4. 트리와 관련된 중요한 문제 유형
+#### 4. 트리 관련 리트코드 문제
 
-- **이진 트리의 직경 (Diameter of a Binary Tree)**: 이진 트리에서 두 노드 간의 최대 거리를 찾는 문제.
-- **Lowest Common Ancestor (LCA)**: 두 노드의 공통된 조상을 찾는 문제.
-- **이진 탐색 트리의 검증 (Validate BST)**: 주어진 트리가 이진 탐색 트리인지 확인하는 문제.
-- **경로 합 (Path Sum)**: 루트에서 리프까지의 경로 중 특정 합을 가지는 경로가 있는지 확인하는 문제.
-- **Serialize and Deserialize Binary Tree**: 트리 구조를 직렬화하고 역직렬화하는 문제.
-- **Balanced Binary Tree**: 주어진 이진 트리가 균형 이진 트리인지 확인하는 문제.
+- [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)
+- [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) : 두 노드의 공통된 조상을 찾는 문제.
+- [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) : 이진 트리에서 두 노드 간의 최대 거리를 찾는 문제.
+- [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) : 트리 구조를 직렬화하고 역직렬화하는 문제.
+- [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) : 주어진 트리가 이진 탐색 트리인지 확인하는 문제.
 
-#### 5. 심화 주제
-
-- **Segment Tree**: 구간 합, 최소/최대값 쿼리 및 업데이트를 효율적으로 처리하는 트리. 주로 범위 쿼리 문제에서 사용됨.
-- **Trie**: 문자열 검색, 자동 완성, 사전 기능 구현 등에 사용됨. 문자열 관련 문제에서 자주 등장.
-- **Red-Black Tree**: 자가 균형 이진 탐색 트리로, 균형을 유지하여 최악의 경우에도 O(log n) 성능을 보장함.
-- **Fenwick Tree (Binary Indexed Tree, BIT)**: 주로 구간 합을 빠르게 계산하기 위해 사용되는 자료구조.
-
-#### 6. 트리 관련 리트코드 문제
-
-- Binary Tree Inorder Traversal
-- [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
-- [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
-- Serialize and Deserialize Binary Tree
-- Validate Binary Search Tree
-
-#### 7. **면접 팁**
+#### 5. **면접 팁**
 
 - **기본기를 다져라**: 트리의 기본 개념과 각종 트리의 특징을 확실하게 이해하라.
 - **손코딩 연습**: 트리 순회, 삽입, 삭제, 탐색 등의 기본적인 알고리즘을 손코딩으로 연습하라.
