@@ -28,8 +28,7 @@ categories: [DataStructure, ]
 
 
 {% raw %}
-```markdown
-markdown코드 복사
+```text
     1 → 2 → 3
          ↑   ↓
          5 ← 4
@@ -37,7 +36,6 @@ markdown코드 복사
 {% endraw %}
 
 
-- **관련 리트코드 문제**: Course Schedule
 
 #### 2.2 **무향 그래프 (Undirected Graph)**
 
@@ -46,8 +44,7 @@ markdown코드 복사
 
 
 {% raw %}
-```markdown
-markdown코드 복사
+```text
     1 — 2 — 3
      \   |
       \  |
@@ -56,7 +53,6 @@ markdown코드 복사
 {% endraw %}
 
 
-- **관련 리트코드 문제**: Graph Valid Tree
 
 #### 2.3 **가중 그래프 (Weighted Graph)**
 
@@ -65,8 +61,7 @@ markdown코드 복사
 
 
 {% raw %}
-```scss
-scss코드 복사
+```text
     1 —(4)— 2 —(3)— 3
      \      |      /
     (2)    (1)    (5)
@@ -76,7 +71,6 @@ scss코드 복사
 {% endraw %}
 
 
-- **관련 리트코드 문제**: Network Delay Time
 
 #### 2.4 **비가중 그래프 (Unweighted Graph)**
 
@@ -85,9 +79,8 @@ scss코드 복사
 
 
 {% raw %}
-```markdown
-markdown코드 복사
-    1 — 2 — 3
+```text
+    1  —  2  —  3
      \    |   /
       \   |  /
          4 — 5
@@ -95,7 +88,6 @@ markdown코드 복사
 {% endraw %}
 
 
-- **관련 리트코드 문제**: Number of Islands
 
 #### 2.5 **순환 그래프 (Cyclic Graph)**
 
@@ -104,10 +96,9 @@ markdown코드 복사
 
 
 {% raw %}
-```markdown
-markdown코드 복사
+```text
     1 — 2 — 3
-     \    |
+     \     |
       \   4
        \ /
         5
@@ -115,7 +106,6 @@ markdown코드 복사
 {% endraw %}
 
 
-- **관련 리트코드 문제**: Find Eventual Safe States
 
 #### 2.6 **비순환 그래프 (Acyclic Graph)**
 
@@ -124,8 +114,7 @@ markdown코드 복사
 
 
 {% raw %}
-```markdown
-markdown코드 복사
+```text
     1 → 2 → 3
         ↓
         4 → 5
@@ -133,7 +122,6 @@ markdown코드 복사
 {% endraw %}
 
 
-- **관련 리트코드 문제**: Minimum Height Trees
 
 #### 2.7 **이분 그래프 (Bipartite Graph)**
 
@@ -142,8 +130,7 @@ markdown코드 복사
 
 
 {% raw %}
-```markdown
-markdown코드 복사
+```text
     1 — 4
    /     \
   2 — 5   3
@@ -151,7 +138,6 @@ markdown코드 복사
 {% endraw %}
 
 
-- **관련 리트코드 문제**: Is Graph Bipartite?
 
 #### 3. **그래프의 표현 방법**
 
@@ -218,10 +204,17 @@ markdown코드 복사
 #### 10. **리트코드 그래프 문제**
 
 - **Number of Islands**
-- **Course Schedule**
+	- 2D 그리드에서 연결된 섬의 개수를 세는 문제로, DFS/BFS 알고리즘을 활용해 그래프 탐색을 수행한다.
 - **Clone Graph**
+	- 주어진 그래프를 깊은 복사하여 복제하는 문제로, DFS/BFS를 사용해 그래프를 순회하며 노드를 복사한다.
+- **Pacific Atlantic Water Flow**
+	- 물이 태평양과 대서양으로 동시에 흐를 수 있는 지점을 찾는 문제로, 다중 출발점에서의 탐색을 통해 해결한다.
+- **Course Schedule**
+	- 주어진 코스와 선행 조건을 기반으로 모든 코스를 수강할 수 있는지 확인하는 문제로, 위상 정렬과 사이클 검출을 위해 DFS를 사용한다.
 - **Graph Valid Tree**
-- **Reconstruct Itinerary**
+	- 주어진 그래프가 트리인지 확인하는 문제로, DFS/BFS를 통해 사이클을 검출하고 트리의 조건을 검사한다.
+- **Number of Connected Components In An Undirected Graph**
+	- 무향 그래프에서 연결된 컴포넌트의 수를 구하는 문제로, DFS/BFS를 통해 각 연결 컴포넌트를 탐색한다.
 
 #### 11. 면접 팁 
 
