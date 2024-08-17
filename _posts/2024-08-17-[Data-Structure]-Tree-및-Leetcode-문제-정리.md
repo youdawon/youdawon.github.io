@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-17
-title: "[Data structure] Tree 및 Leetcode 문제 정리"
+title: "[Data Structure] Tree 및 Leetcode 문제 정리"
 tags: [DataStructure, Tree, LeetCode, ]
 categories: [DataStructure, ]
 ---
