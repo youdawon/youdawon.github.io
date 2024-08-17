@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-16
 title: "[SystemDesign] 시스템 디자인 별 솔루션 및 사용 컴포넌트"
-tags: [SystemDesign, ]
-categories: [SystemDesign, Basics, ]
+tags: [System Design, ]
+categories: [System Design, Basics, ]
 ---
 
 

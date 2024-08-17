@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-10
 title: "[SystemDesign-Twritter] System flows"
-tags: [SystemDesign, Architecture, Twitter, ]
-categories: [SystemDesign, Problems, Twitter, ]
+tags: [System Design, Architecture, Twitter, ]
+categories: [System Design, Problems, Twitter, ]
 ---
 
 

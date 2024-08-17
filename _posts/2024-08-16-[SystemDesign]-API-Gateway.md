@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-16
 title: "[SystemDesign] API Gateway"
-tags: [SystemDesign, API Gateway, ]
-categories: [SystemDesign, Basics, ]
+tags: [System Design, API Gateway, ]
+categories: [System Design, Basics, ]
 ---
 
 

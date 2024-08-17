@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-17
 title: "[Data Structure] Tree 및 Leetcode 문제 정리"
-tags: [DataStructure, Tree, LeetCode, ]
-categories: [DataStructure, ]
+tags: [Data Structure, Tree, LeetCode, ]
+categories: [Data Structure, ]
 ---
 
 
@@ -13,7 +13,7 @@ categories: [DataStructure, ]
 - **노드(Node)**: 트리의 각 요소로, 데이터와 자식 노드를 가리키는 포인터(혹은 참조)를 포함.
 - **루트 노드(Root Node)**: 트리의 최상위 노드.
 - **리프 노드(Leaf Node)**: 자식 노드가 없는 노드.
-- *부모 노드(Parent Node)**와 **자식 노드(Child Node)**: 특정 노드가 다른 노드를 가리킬 때, 가리키는 노드를 자식 노드, 가리키는 노드를 부모 노드라 함.
+- **부모 노드(Parent Node)**와 **자식 노드(Child Node)**: 특정 노드가 다른 노드를 가리킬 때, 가리키는 노드를 자식 노드, 가리키는 노드를 부모 노드라 함.
 - **서브트리(Subtree)**: 트리의 부분 트리, 특정 노드와 그 하위 노드들이 서브트리를 이룸.
 - **높이(Height)**: 노드에서 리프까지의 가장 긴 경로의 길이.
 - **깊이(Depth)**: 루트에서 특정 노드까지의 경로의 길이.
@@ -102,9 +102,9 @@ categories: [DataStructure, ]
 {% raw %}
 ```text
       7B
-     /  \\
+     /  \
    3R    10B
-  / \\    / \\
+  / \    / \
  1B  5B 8R  12B
 ```
 {% endraw %}
@@ -120,13 +120,13 @@ categories: [DataStructure, ]
 {% raw %}
 ```text
         (root)
-        /  |  \\
+        /  |  \
        c   d   a
-      /    |    \\
+      /    |    \
      a     o     t
     /      |     |
    t(R)    g(R)  r(R)
-    \\      |
+    \      |
      r(R)  s(R)
 ```
 {% endraw %}
@@ -239,11 +239,8 @@ categories: [DataStructure, ]
 #### **실전 문제 해결**
 
 1. 주어진 이진 트리에서 두 노드 간의 경로를 찾는 방법을 설명해라.
-2. 이진 트리의 직경(Diameter)을 구하는
-
-방법을 설명해라.
+2. 이진 트리의 직경(Diameter)을 구하는 방법을 설명해라.
 3. 트리에서 노드를 삭제할 때, 그 과정에서 발생할 수 있는 문제점과 이를 해결하는 방법을 설명해라.
-
 
 #### 6. **면접 팁**
 

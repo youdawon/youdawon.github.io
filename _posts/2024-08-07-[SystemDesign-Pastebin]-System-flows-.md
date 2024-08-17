@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-07
 title: "[SystemDesign-Pastebin] System flows "
-tags: [SystemDesign, Architecture, Pastebin, ]
-categories: [SystemDesign, Problems, Pastebin, ]
+tags: [System Design, Architecture, Pastebin, ]
+categories: [System Design, Problems, Pastebin, ]
 ---
 
 

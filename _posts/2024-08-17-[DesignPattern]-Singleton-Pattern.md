@@ -2,7 +2,7 @@
 layout: post
 date: 2024-08-17
 title: "[DesignPattern] Singleton Pattern"
-tags: [DesignPattern, Singleton, ]
+tags: [Design Pattern, Singleton, ]
 categories: [Design Pattern, ]
 ---
 

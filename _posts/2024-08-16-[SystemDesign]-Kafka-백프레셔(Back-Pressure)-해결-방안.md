@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-16
 title: "[SystemDesign] Kafka 백프레셔(Back Pressure) 해결 방안"
-tags: [SystemDesign, Kafka, ]
-categories: [SystemDesign, Basics, ]
+tags: [System Design, Kafka, ]
+categories: [System Design, Basics, ]
 ---
 
 

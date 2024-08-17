@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-17
 title: "[Data Structure] Linked List 및 Leetcode 문제 정리"
-tags: [DataStructure, LeetCode, LinkedList, ]
-categories: [DataStructure, ]
+tags: [Data Structure, LeetCode, LinkedList, ]
+categories: [Data Structure, ]
 ---
 
 

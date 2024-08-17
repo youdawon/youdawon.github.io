@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-08
 title: "[SystemDesign-Dropbox] System flows"
-tags: [SystemDesign, Architecture, Dropbox, ]
-categories: [SystemDesign, Problems, Dropbox, ]
+tags: [System Design, Architecture, Dropbox, ]
+categories: [System Design, Problems, Dropbox, ]
 ---
 
 

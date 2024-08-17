@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-15
 title: "[SystemDesign-Twitter Search] API Design"
-tags: [SystemDesign, Architecture, Twitter Search, ]
-categories: [SystemDesign, Problems, Twitter Search, ]
+tags: [System Design, Architecture, Twitter Search, ]
+categories: [System Design, Problems, Twitter Search, ]
 ---
 
 

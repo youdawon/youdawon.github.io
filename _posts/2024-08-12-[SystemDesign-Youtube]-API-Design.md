@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-12
 title: "[SystemDesign-Youtube] API Design"
-tags: [SystemDesign, Architecture, Youtube, ]
-categories: [SystemDesign, Problems, Youtube, ]
+tags: [System Design, Architecture, Youtube, ]
+categories: [System Design, Problems, Youtube, ]
 ---
 
 

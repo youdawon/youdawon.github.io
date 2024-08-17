@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-16
 title: "[SystemDesign] 시스템 디자인 면접 핵심 학습 포인트"
-tags: [SystemDesign, ]
-categories: [SystemDesign, Basics, ]
+tags: [System Design, ]
+categories: [System Design, Basics, ]
 ---
 
 

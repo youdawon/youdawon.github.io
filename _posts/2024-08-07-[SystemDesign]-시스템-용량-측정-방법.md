@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-07
 title: "[SystemDesign] 시스템 용량 측정 방법"
-tags: [SystemDesign, Architecture, ]
-categories: [SystemDesign, Basics, ]
+tags: [System Design, Architecture, ]
+categories: [System Design, Basics, ]
 ---
 
 

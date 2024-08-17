@@ -3,7 +3,7 @@ layout: post
 date: 2024-08-09
 title: "[SystemDesign] Message Broker vs Message Queue"
 tags: [MessageQueue, MessageBroker, ]
-categories: [SystemDesign, Basics, ]
+categories: [System Design, Basics, ]
 ---
 
 

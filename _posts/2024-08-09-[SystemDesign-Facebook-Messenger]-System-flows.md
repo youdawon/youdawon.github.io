@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-09
 title: "[SystemDesign-Facebook Messenger] System flows"
-tags: [SystemDesign, Architecture, FacebookMessenger, ]
-categories: [SystemDesign, Problems, FacebookMessenger, ]
+tags: [System Design, Architecture, FacebookMessenger, ]
+categories: [System Design, Problems, FacebookMessenger, ]
 ---
 
 1. **User Interaction**:

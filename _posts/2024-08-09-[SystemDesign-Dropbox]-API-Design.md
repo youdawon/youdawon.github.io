@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-09
 title: "[SystemDesign-Dropbox] API Design"
-tags: [SystemDesign, Architecture, Dropbox, ]
-categories: [SystemDesign, Problems, Dropbox, ]
+tags: [System Design, Architecture, Dropbox, ]
+categories: [System Design, Problems, Dropbox, ]
 ---
 
 

@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-13
 title: "[SystemDesign-Typeahead Suggestion] 검색어 시스템 복구 방법"
-tags: [SystemDesign, Architecture, Typeahead Suggestion, ]
-categories: [SystemDesign, Problems, Typeahead Suggestion, ]
+tags: [System Design, Architecture, Typeahead Suggestion, ]
+categories: [System Design, Problems, Typeahead Suggestion, ]
 ---
 
 

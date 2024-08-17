@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-16
 title: "[SystemDesign] Index Builder"
-tags: [SystemDesign, Architecture, Twitter Search, ]
-categories: [SystemDesign, Basics, ]
+tags: [System Design, Architecture, Twitter Search, ]
+categories: [System Design, Basics, ]
 ---
 
 

@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-17
 title: "[Data Structure] Graph 및 Leetcode 문제 정리"
-tags: [DataStructure, LeetCode, Graph, ]
-categories: [DataStructure, ]
+tags: [Data Structure, LeetCode, Graph, ]
+categories: [Data Structure, ]
 ---
 
 
@@ -11,7 +11,7 @@ categories: [DataStructure, ]
 
 - **그래프(Graph)**: 정점(Vertex)과 간선(Edge)으로 이루어진 자료구조로, 객체 간의 관계를 표현하는 데 사용됨.
 - **정점(Vertex)**: 그래프에서 데이터 요소를 나타내는 노드.
-- **간선(Edge)**: 두 정점 간의 관계를 나타내는 연결선. 방향이 있는 경우 **유향 그래프(Directed Graph)**, 방향이 없는 경우 **무향 그래프(Undirected Graph)**라고 함.
+- **간선(Edge)**: 두 정점 간의 관계를 나타내는 연결선. 방향이 있는 경우 **Directed Graph**, 방향이 없는 경우 **Undirected Graph**라고 함.
 - **경로(Path)**: 한 정점에서 시작하여 다른 정점까지의 일련의 간선들의 연결.
 - **사이클(Cycle)**: 시작 정점과 끝 정점이 같은 경로.
 - **연결 그래프(Connected Graph)**: 모든 정점이 간선으로 연결된 그래프.

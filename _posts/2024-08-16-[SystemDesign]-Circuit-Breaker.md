@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-16
 title: "[SystemDesign] Circuit Breaker"
-tags: [SystemDesign, API Gateway, Circuit Breaker, ]
-categories: [SystemDesign, Basics, ]
+tags: [System Design, API Gateway, Circuit Breaker, ]
+categories: [System Design, Basics, ]
 ---
 
 

@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-16
 title: "[SystemDesign-Twitter Search] Data Partitioning"
-tags: [SystemDesign, Architecture, Twitter Search, ]
-categories: [SystemDesign, Problems, Twitter Search, ]
+tags: [System Design, Architecture, Twitter Search, ]
+categories: [System Design, Problems, Twitter Search, ]
 ---
 
 

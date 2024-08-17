@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-17
 title: "[Data Structure] Stack 및 Leetcode 문제 정리"
-tags: [DataStructure, Stack, LeetCode, ]
-categories: [DataStructure, ]
+tags: [Data Structure, Stack, LeetCode, ]
+categories: [Data Structure, System Design, Design Pattern, ]
 ---
 
 

@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-15
 title: "[SystemDesign-Rate Limiter] Rate Limiter 알고리즘"
-tags: [SystemDesign, Architecture, Late Limiter, ]
-categories: [SystemDesign, Problems, Late Limiter, ]
+tags: [System Design, Architecture, Late Limiter, ]
+categories: [System Design, Problems, Late Limiter, ]
 ---
 
 
