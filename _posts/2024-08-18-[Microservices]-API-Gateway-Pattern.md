@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-18
-title: "[Microservices] API Gateway Patttern"
+title: "[Microservices] API Gateway Pattern"
 tags: [Microservices, API Gateway, ]
 categories: [Microservices, ]
 ---
