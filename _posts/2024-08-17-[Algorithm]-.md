@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-17
 title: "[Algorithm] "
-tags: [Algorithm, ]
-categories: [Algorithm, graph, Dijkstra, ]
+tags: [Algorithm, Graph, Dijkstra, ]
+categories: [Algorithm, graph, ]
 ---
 
 
