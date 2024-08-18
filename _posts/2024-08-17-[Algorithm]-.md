@@ -3,7 +3,7 @@ layout: post
 date: 2024-08-17
 title: "[Algorithm] "
 tags: [Algorithm, ]
-categories: [Algorithm, graph, ]
+categories: [Algorithm, graph, Dijkstra, ]
 ---
 
 
