@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-18
-title: "Kruskal Algorithm"
+title: "[Algorithm] Kruskal’s Algorithm"
 tags: [Algorithm, Graph, Krustal, ]
 categories: [Algorithm, graph, ]
 ---
