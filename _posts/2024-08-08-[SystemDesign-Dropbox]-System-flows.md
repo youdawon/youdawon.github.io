@@ -44,6 +44,8 @@ categories: [System Design, Problems, Dropbox, ]
 #### **6. Remote Change Notification:**
 
 - **6.1. Remote Change Detection:** If a change occurs on the remote server (e.g., a file is uploaded or modified by another client):
+	- **6.1.1. Event Generation:** The Sync Service generates an event and publishes it to the Event Broker (Kafka).
+	- **6.1.2. Client Notification:** The Event Broker notifies the client about the remote change.
 - **6.2. Change Handling:** The client processes the notification, updates its local database, and downloads any necessary changes.
 
 ![0](/assets/img/2024-08-08-[SystemDesign-Dropbox]-System-flows.md/0.png)
