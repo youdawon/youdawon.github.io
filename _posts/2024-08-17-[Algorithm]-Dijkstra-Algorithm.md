@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-17
-title: "[Algorithm] "
+title: "[Algorithm] Dijkstra Algorithm"
 tags: [Algorithm, Graph, Dijkstra, ]
 categories: [Algorithm, graph, ]
 ---
