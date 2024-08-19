@@ -2,8 +2,8 @@
 layout: post
 date: 2024-08-19
 title: "[Algorithm] Array 중요 알고리즘"
-tags: [Data Structure, Array, ]
-categories: [Data Structure, ]
+tags: [Algorithm, Array, ]
+categories: [Algorithm, Array, ]
 ---
 
 
