@@ -185,11 +185,18 @@ categories: [Data Structure, ]
 
 #### 4. 트리 관련 리트코드 문제
 
-- [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)
-- [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 - [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
-- [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
 - [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)
+- [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+- [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+- [Same Tree](https://leetcode.com/problems/same-tree/)
+- [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/)
+- [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+- [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+- [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+- [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+- [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
 
 #### 5. 트리와 관련된 면접 질문 유형
 
