@@ -63,7 +63,7 @@ categories: [Data Structure, ]
 6. **구조와 패턴을 파악하라**:
 	- 반복되는 패턴(예: 슬라이딩 윈도우, 투 포인터, 정렬 후 이진 탐색 등)을 파악하여 효율적인 문제 해결 방법을 찾는 능력을 키워야 한다.
 
-#### 트리관련 리트코드 문제
+#### 리트코드 문제
 
 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
