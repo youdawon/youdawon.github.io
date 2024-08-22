@@ -203,18 +203,12 @@ categories: [Data Structure, ]
 
 #### 10. **리트코드 그래프 문제**
 
-- **Number of Islands**
-	- 2D 그리드에서 연결된 섬의 개수를 세는 문제로, DFS/BFS 알고리즘을 활용해 그래프 탐색을 수행한다.
-- **Clone Graph**
-	- 주어진 그래프를 깊은 복사하여 복제하는 문제로, DFS/BFS를 사용해 그래프를 순회하며 노드를 복사한다.
-- **Pacific Atlantic Water Flow**
-	- 물이 태평양과 대서양으로 동시에 흐를 수 있는 지점을 찾는 문제로, 다중 출발점에서의 탐색을 통해 해결한다.
-- **Course Schedule**
-	- 주어진 코스와 선행 조건을 기반으로 모든 코스를 수강할 수 있는지 확인하는 문제로, 위상 정렬과 사이클 검출을 위해 DFS를 사용한다.
-- **Graph Valid Tree**
-	- 주어진 그래프가 트리인지 확인하는 문제로, DFS/BFS를 통해 사이클을 검출하고 트리의 조건을 검사한다.
-- **Number of Connected Components In An Undirected Graph**
-	- 무향 그래프에서 연결된 컴포넌트의 수를 구하는 문제로, DFS/BFS를 통해 각 연결 컴포넌트를 탐색한다.
+1. [**Number of Islands**](https://leetcode.com/problems/number-of-islands/)
+2. [**Clone Graph**](https://leetcode.com/problems/clone-graph/)
+3. [**Pacific Atlantic Water Flow**](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+4. [**Course Schedule**](https://leetcode.com/problems/course-schedule/)
+5. [**Graph Valid Tree**](https://leetcode.com/problems/graph-valid-tree/)
+6. [**Number of Connected Components In An Undirected Graph**](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
 
 #### **11. 면접에서 자주 나오는 그래프 문제 유형**
 
