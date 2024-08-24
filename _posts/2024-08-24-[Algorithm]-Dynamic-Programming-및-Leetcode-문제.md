@@ -92,10 +92,7 @@ categories: [Algorithm, Dynamic Programming, ]
 #### [10. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 
 - **문제 개요**: 주어진 배열에서 가장 긴 증가하는 부분 수열의 길이를 구하는 문제이다.
-- **점화식**: `dp[i] = max(dp[i], dp[j] + 1)` (0 ≤ j < i and nums[j]
-
-< nums[i])
-
+- **점화식**: `dp[i] = max(dp[i], dp[j] + 1)` (0 ≤ j < i and nums[j] < nums[i])
 - **초기값**: 각 `dp[i]`를 1로 초기화한다.
 - **설명**: 각 요소를 기준으로 이전 요소들과 비교하여 증가하는 수열의 최대 길이를 갱신한다.
 
