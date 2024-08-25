@@ -73,6 +73,26 @@ def hasCycle(head: ListNode) -> bool:
 #### **사이클의 시작점을 찾는 방법**
 
 
+![0](/assets/img/2024-08-17-[Algorithm]-Floyd’s-Cycle-Finding-Algorithm-(Tortoise-and-Hare-Algorithm).md/0.png)
+
+
+
+{% raw %}
+```text
+빠른 포인터 이동 거리 = 2 * 느린 포인터의 이동 거리 
+
+(m + n*x + k) = 2*(m + n*y + k)
+
+x -->  느린 포인터를 만나기 전 순회한 횟수
+
+y -->  빠른 포인터를 만나기 전 순회한 횟수
+
+x = m + n*y + k
+```
+{% endraw %}
+
+
+
 만약 사이클이 존재한다면, 사이클의 시작점을 찾을 수 있는 방법도 있다:
 
 1. **사이클이 발견되었을 때**: `tortoise`를 리스트의 시작점으로 옮기고, `hare`는 그대로 두고, 두 포인터를 한 칸씩 이동시킨다.
@@ -113,3 +133,6 @@ def detectCycle(head: ListNode) -> ListNode:
 - **링크드 리스트에서 사이클 감지**: 무한 루프 방지를 위한 연결 리스트의 사이클 감지.
 - **그래프 이론**: 그래프 내에서의 순환 탐지.
 - **컴퓨터 네트워크**: 패킷 순환 감지 및 네트워크 안정성 평가.
+
+참고 : [https://www.geeksforgeeks.org/find-first-node-of-loop-in-a-linked-list/](https://www.geeksforgeeks.org/find-first-node-of-loop-in-a-linked-list/)
+
