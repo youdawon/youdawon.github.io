@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-08-25
-title: "[Design Pattern] MVC 패턴"
+title: "[Design Pattern] MVC Pattern"
 tags: [Design Pattern, MVC Pattern, ]
 categories: [Design Pattern, ]
 ---
