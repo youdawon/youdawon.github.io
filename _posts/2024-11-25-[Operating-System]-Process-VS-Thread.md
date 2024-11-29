@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-11-25
-title: "[Operating System] 프로세스와 스레드"
+title: "[Operating System] Process VS Thread"
 tags: [Operating System, ]
 categories: [Operating System, ]
 ---
