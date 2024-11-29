@@ -9,27 +9,37 @@ categories: [Network, ]
 
 ### **1. TCP (Transmission Control Protocol)**
 
-- **연결 지향적**: 데이터를 전송하기 전에 송신자와 수신자 간의 연결을 설정한다.
-- **신뢰성 보장**: 패킷이 손실되거나 손상되면 이를 감지하고 재전송하여 데이터를 정확히 전달한다.
-- **데이터 순서 보장**: 패킷이 전송된 순서대로 도착하도록 한다.
-- **흐름 제어 및 혼잡 제어**: 네트워크의 안정성을 위해 데이터 전송 속도를 조절한다.
-- **사용 사례**: 웹 브라우징(HTTP/HTTPS), 이메일(SMTP), 파일 전송(FTP) 등 신뢰성과 데이터 무결성이 중요한 애플리케이션에 사용한다.
+- **Reliable**: Makes sure the client gets all packets in the correct order.
+- **Handshake**: Uses **3-way handshake** to connect.
+- **Disconnect**: Ends with **4-way handshake** after sending data.
+- **Example**: File transfer, web browsing.
 
-#### **2. UDP (User Datagram Protocol)**
-
-- **비연결형**: 데이터 전송 전에 연결을 설정할 필요 없이, 데이터를 빠르게 전송한다.
-- **신뢰성 없음**: 패킷 손실 시 재전송이 이루어지지 않으며, 확인 응답이 없다.
-- **데이터 순서 보장 없음**: 패킷이 전송된 순서대로 도착하지 않을 수 있다.
-- **낮은 지연 시간**: 추가적인 오버헤드가 없어 전송 속도가 빠르다.
-- **사용 사례**: 실시간 애플리케이션(온라인 게임, VoIP), 스트리밍 등에서 사용하며, 속도와 낮은 지연 시간이 중요한 경우에 적합하다.
-
-#### **유튜브와 TCP/UDP의 선택**
+#### **1. TCP (User Diagram Protocol)**
 
 
-유튜브와 같은 비디오 스트리밍 서비스는 **TCP**를 사용한다. 그 이유는 다음과 같다:
+ex) streaming website, online game
 
-1. **신뢰성**: 유튜브는 안정적인 스트리밍을 제공하기 위해 패킷 손실 시 데이터를 재전송할 수 있는 TCP를 사용한다. UDP는 신뢰성을 보장하지 않기 때문에 패킷 손실 시 비디오 품질이 저하될 수 있다.
-2. **네트워크 안정성**: TCP는 네트워크 혼잡을 관리하고 안정적인 연결을 유지할 수 있다. 유튜브는 다양한 네트워크 환경에서 끊김 없는 재생을 위해 TCP의 안정성을 활용한다.
-3. **보안**: 유튜브는 HTTPS를 통해 데이터를 암호화하며, HTTPS는 TCP 위에서 작동한다. UDP는 이러한 표준화된 보안 프로토콜을 지원하지 않기 때문에, 유튜브와 같은 서비스에서 사용되기 어렵다.
-4. **버퍼링 및 사용자 경험**: TCP는 버퍼링을 통해 일시적인 네트워크 문제를 완화하여 끊김 없는 스트리밍을 제공한다. UDP는 패킷 손실 시 재전송이 이루어지지 않기 때문에 사용자가 품질 저하를 경험할 수 있다.
-5. **적응형 스트리밍**: 유튜브는 네트워크 상태에 따라 실시간으로 비디오 품질을 조절하는 기술(DASH)을 사용하며, 이는 TCP를 기반으로 한다.
+1. **Fast**: Faster than TCP, no connection setup.
+2. **Unreliable**: Doesn't guarantee all packets arrive or stay in order.
+3. **Example**: Online games, live video streaming.
+
+#### 3. TCP 3-Way handshake
+
+1. step 1 : Client → Server(SYN)
+	1. The client sends a SYN packet to the server, requesting to establish a connection.
+2. step 2 : Server → Client(SYN + ACK)
+	1. The server acknowledges the client’s request by sending a SYN packet back, along with an ACK to confirm it received the client’s SYN
+3. step 3 : Client → Server(ACK)
+	1. The client acknowledges the server’s response by sending an ACK packet.
+	2. At this point, the connection is established, and data transfer can begin.
+
+#### 4. TCP 4-Way handshake
+
+1. step 1 : Client → Server(FIN)
+	1. The client sends a FIN packet to the server, requesting to terminate a connection.
+2. step 2 : Server → Client(ACK)
+	1. The server acknowledges the client’s request by sending an ACK packet. At this point, the client stops sending data.
+3. step 3 : Server → Client(FIN)
+	1. Once the server is ready to terminate its connection, it sends its own FIN packet to the client.
+4. step 4 : Client → Server(ACK)
+	1. The client acknowledges the server’s FIN packet by sending an ACK. The connection now fully terminated.
