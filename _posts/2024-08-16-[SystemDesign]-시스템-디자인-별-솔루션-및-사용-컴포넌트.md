@@ -382,9 +382,6 @@ categories: [System Design, Basics, ]
 - **What it solves**: Efficiently handles graph-based data and relationships.
 - **Caveats/Issues**: Steep learning curve, non-graph query inefficiency.
 - **Mitigations**:
-	- Use graph-specific optimizations.
-	- Implement hybrid models for different data types.
-	- Use indexing and caching for performance.
 - **Examples of Tools**: Neo4j, Amazon Neptune, OrientDB
 
 ### Big data analytics
