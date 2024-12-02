@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2024-11-29
-title: "[Blind 75] "
+title: "[Blind 75] Linked List Cycle"
 tags: [Algorithm, Blind75, ]
 categories: [Algorithm, Blind75, ]
 ---
